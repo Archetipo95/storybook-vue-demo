@@ -15,8 +15,10 @@ A minimal, production-grade test and demo repository for [Security-Hardened Stor
 Features:
 - ⚡ **Vue 3.5 + Vite 8 + TypeScript**: Minimal, type-safe Single File Components using `<script setup lang="ts">`.
 - 📚 **Storybook 10**: Autodocs, interactive play functions (`storybook/test`), and accessibility checks (`@storybook/addon-a11y`).
-- 🚀 **Automated GitHub Pages Deployment**: Fully automated deployment with generated dynamic SVG badges and hand-drawn growth charts via `Archetipo95/storybook-github-pages@v1`.
-- 🔍 **PR Previews**: Isolated Storybook previews generated for pull requests with automatic comment notifications and cleanup.
+- 🛡️ **Dynamic Badges & Status**: Real-time component coverage %, story count, component count, and state-aware deployment status (`published`, `building`, `failed`).
+- 📈 **Hand-Drawn Growth Chart**: Vintage Star-History style growth history tracking component coverage, stories, and components over time.
+- 🚀 **Automated GitHub Pages Deployment**: Fully automated deployment via `Archetipo95/storybook-github-pages@v1` with zero runtime dependencies.
+- 🔍 **Rich PR Previews**: Isolated Storybook previews generated for pull requests with live badges, base vs preview coverage delta comparison tables, collapsible growth charts, and automatic cleanup.
 
 ---
 
@@ -34,6 +36,7 @@ Features:
 - **`Badge`**: Visual status indicators with dot support and semantic color tokens.
 - **`Input`**: Accessible text input with `v-model` binding, error states, and helper text.
 - **`Card`**: Structured container with `#header`, default body, and `#footer` slots.
+- **`Alert`**: Contextual feedback alerts (`info`, `success`, `warning`, `danger`) with optional dismissal and icons.
 
 ---
 
