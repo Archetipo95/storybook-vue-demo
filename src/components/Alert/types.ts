@@ -9,3 +9,4 @@ export interface AlertProps {
 export interface AlertEmits {
   (e: 'dismiss'): void
 }
+
