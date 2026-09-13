@@ -1,0 +1,17 @@
+name: PR Preview Cleanup
+
+on:
+  pull_request_target:
+    types: [closed]
+
+concurrency:
+  group: storybook-pages-${{ github.repository }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  cleanup:
+    uses: Archetipo95/storybook-github-pages/.github/workflows/pr-preview-cleanup.yml@v1
+    secrets: inherit

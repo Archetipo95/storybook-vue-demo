@@ -1,0 +1,18 @@
+name: PR Preview Publish
+
+on:
+  workflow_run:
+    workflows: ['PR Preview Build']
+    types: [completed]
+
+concurrency:
+  group: storybook-pages-${{ github.repository }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    uses: Archetipo95/storybook-github-pages/.github/workflows/pr-preview-publish.yml@v1
+    secrets: inherit

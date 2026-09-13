@@ -7,11 +7,9 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: github-pages
+  group: storybook-pages-${{ github.repository }}
   cancel-in-progress: false
 
 jobs:
@@ -20,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: https://archetipo95.github.io/storybook-vue-demo/
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -37,10 +35,19 @@ jobs:
       - name: Build Storybook
         run: npm run build-storybook
 
-      - name: Deploy Storybook to GitHub Pages
-        id: deploy
-        uses: Archetipo95/storybook-github-pages@v1
+      - name: Checkout Pages branch
+        uses: actions/checkout@v4
         with:
-          checkout: 'false'
-          path: 'storybook-static'
-          generate_badges: 'true'
+          ref: gh-pages
+          path: pages-repo
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish Storybook to GitHub Pages
+        uses: Archetipo95/storybook-github-pages/publisher@v1
+        with:
+          pages_repo: ${{ github.workspace }}/pages-repo
+          pages_branch: gh-pages
+          source_directory: ${{ github.workspace }}/storybook-static
+          managed_directories: pr-preview
+          site_url: https://archetipo95.github.io/storybook-vue-demo/
