@@ -10,6 +10,7 @@
         --grid-color: #e2e8f0;
         --stories-color: #ff4785;
         --components-color: #0288d1;
+        --total-color: #8b5cf6;
         --legend-bg: #ffffff;
       }
       @media (prefers-color-scheme: dark) {
@@ -21,6 +22,7 @@
           --grid-color: #21262d;
           --stories-color: #ff6097;
           --components-color: #38bdf8;
+          --total-color: #a78bfa;
           --legend-bg: #161b22;
         }
       }
@@ -29,6 +31,7 @@
       .grid { stroke: var(--grid-color); stroke-width: 1.2; stroke-dasharray: 4,4; fill: none; }
       .stories-line { stroke: var(--stories-color); stroke-width: 2.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
       .components-line { stroke: var(--components-color); stroke-width: 2.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .total-line { stroke: var(--total-color); stroke-width: 2.4; stroke-dasharray: 6,4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
       .legend-box { stroke: var(--border-color); stroke-width: 1.6; fill: var(--legend-bg); }
       .title-text { fill: var(--text-primary); font-size: 20px; font-weight: bold; text-anchor: middle; }
       .label-text { fill: var(--text-secondary); font-size: 13px; font-weight: 500; }
@@ -75,7 +78,10 @@
       <path d="M 75.00 394.28 Q 74.72 396.14 74.25 398.00 Q 74.50 399.85 75.00 401.71" class="axis" />
       <text x="75.0" y="419.0" class="label-text" text-anchor="middle">2026-09-13</text>
     
-      <path d="M 805.00 394.33 Q 804.63 396.17 804.59 398.01 Q 804.89 399.85 805.00 401.69" class="axis" />
+      <path d="M 440.00 394.33 Q 439.63 396.17 439.59 398.01 Q 439.89 399.85 440.00 401.69" class="axis" />
+      <text x="440.0" y="419.0" class="label-text" text-anchor="middle">2026-09-13</text>
+    
+      <path d="M 805.00 394.29 Q 805.31 396.17 805.73 398.04 Q 805.48 399.92 805.00 401.80" class="axis" />
       <text x="805.0" y="419.0" class="label-text" text-anchor="middle">2026-09-13</text>
     
     <text x="440.0" y="446" class="axis-label">Date</text>
@@ -83,24 +89,41 @@
 
   <!-- Series Curves -->
   <g id="series-curves">
-    <!-- Components Curve -->
-    <path d="M 75.00 327.63 C 196.38 327.76 683.03 327.78 805.00 327.63" class="components-line" />
-    <path d="M 75.00 327.63 C 196.64 327.65 683.48 327.95 805.00 327.63" class="components-line" opacity="0.6" />
+    
+    <!-- Total Components Curve -->
+    <path d="M 75.00 327.63 C 136.22 327.21 317.91 330.34 439.91 327.77 C 561.57 324.96 743.80 313.27 805.00 310.79" class="total-line" />
+    <path d="M 75.00 327.63 C 136.13 327.88 318.58 330.41 440.05 327.61 C 561.83 324.61 744.13 313.72 805.00 310.79" class="total-line" opacity="0.6" />
+    
+
+    <!-- Covered Components Curve -->
+    <path d="M 75.00 327.63 C 135.72 327.47 318.11 327.57 439.85 327.71 C 561.28 328.00 743.77 327.62 805.00 327.63" class="components-line" />
+    <path d="M 75.00 327.63 C 135.98 327.87 318.10 327.57 439.86 327.70 C 561.42 327.34 744.01 327.45 805.00 327.63" class="components-line" opacity="0.6" />
 
     <!-- Stories Curve -->
-    <path d="M 75.00 125.53 C 196.97 125.45 683.58 125.62 805.00 125.53" class="stories-line" />
-    <path d="M 75.00 125.53 C 196.35 125.63 683.56 125.69 805.00 125.53" class="stories-line" opacity="0.6" />
+    <path d="M 75.00 125.53 C 135.53 125.67 318.30 125.55 440.10 125.75 C 561.37 125.13 744.39 125.77 805.00 125.53" class="stories-line" />
+    <path d="M 75.00 125.53 C 135.78 125.42 318.32 125.74 440.09 125.69 C 561.47 125.61 744.41 125.27 805.00 125.53" class="stories-line" opacity="0.6" />
   </g>
 
   <!-- Data Point Markers -->
   <g id="data-points">
     
+      <circle cx="75.0" cy="327.6" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+    
+      <circle cx="440.0" cy="327.6" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+    
+      <circle cx="805.0" cy="310.8" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+    
+    
       <circle cx="75.0" cy="327.6" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+    
+      <circle cx="440.0" cy="327.6" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
       <circle cx="805.0" cy="327.6" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
     
       <circle cx="75.0" cy="125.5" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+    
+      <circle cx="440.0" cy="125.5" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
       <circle cx="805.0" cy="125.5" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
@@ -108,16 +131,22 @@
 
   <!-- Legend Box -->
   <g id="legend" transform="translate(0, 0)">
-    <rect x="90" y="87" width="220" height="58" rx="4" fill="var(--legend-bg)" />
-    <path d="M 88.80 87.00 Q 102.73 86.92 116.66 86.85 Q 130.60 87.41 144.53 87.55 Q 158.46 87.18 172.40 86.50 Q 186.33 86.35 200.26 86.35 Q 214.19 86.34 228.13 86.60 Q 242.06 87.11 255.99 87.29 Q 269.93 86.87 283.86 86.28 Q 297.79 86.60 311.72 87.00 M 310.00 85.32 Q 310.32 100.51 310.41 115.70 Q 310.39 130.90 310.00 146.09 M 311.31 145.00 Q 297.39 145.14 283.47 145.66 Q 269.55 145.02 255.63 144.36 Q 241.71 144.46 227.79 144.77 Q 213.87 145.08 199.95 145.56 Q 186.03 145.24 172.11 144.83 Q 158.19 144.74 144.27 144.67 Q 130.35 144.52 116.43 144.39 Q 102.51 144.72 88.60 145.00 M 90.00 146.59 Q 89.83 131.44 89.57 116.28 Q 89.86 101.13 90.00 85.98" class="legend-box" fill="none" />
+    <rect x="90" y="87" width="260" height="80" rx="4" fill="var(--legend-bg)" />
+    <path d="M 88.41 87.00 Q 101.56 86.74 114.71 86.18 Q 127.86 86.94 141.01 87.34 Q 154.16 87.26 167.31 87.43 Q 180.46 87.09 193.61 87.17 Q 206.76 86.98 219.91 86.57 Q 233.06 86.81 246.21 86.80 Q 259.36 87.52 272.51 87.89 Q 285.66 87.30 298.81 86.87 Q 311.96 86.93 325.11 87.39 Q 338.26 87.42 351.41 87.00 M 350.00 85.37 Q 349.58 99.23 349.38 113.10 Q 349.86 126.96 350.75 140.83 Q 350.27 154.70 350.00 168.56 M 351.09 167.00 Q 337.94 167.08 324.79 166.71 Q 311.64 167.28 298.49 167.46 Q 285.34 167.06 272.19 166.66 Q 259.04 166.84 245.89 166.95 Q 232.74 166.74 219.59 166.78 Q 206.44 166.27 193.30 166.21 Q 180.15 166.21 167.00 166.62 Q 153.85 167.16 140.70 167.30 Q 127.55 167.31 114.40 167.57 Q 101.25 167.37 88.10 167.00 M 90.00 168.61 Q 89.36 154.83 89.15 141.04 Q 89.47 127.25 89.55 113.47 Q 89.58 99.68 90.00 85.89" class="legend-box" fill="none" />
 
     <!-- Stories Legend Item -->
-    <rect x="104" y="101" width="14" height="10" rx="2" fill="var(--stories-color)" />
-    <text x="126" y="110" class="label-text" font-weight="bold">Stories (16)</text>
+    <rect x="104" y="99" width="14" height="10" rx="2" fill="var(--stories-color)" />
+    <text x="126" y="108" class="label-text" font-weight="bold">Stories (16)</text>
 
-    <!-- Components Legend Item -->
-    <rect x="104" y="121" width="14" height="10" rx="2" fill="var(--components-color)" />
-    <text x="126" y="130" class="label-text" font-weight="bold">Components (4)</text>
+    <!-- Covered Components Legend Item -->
+    <rect x="104" y="119" width="14" height="10" rx="2" fill="var(--components-color)" />
+    <text x="126" y="128" class="label-text" font-weight="bold">Covered Components (4 • 80%)</text>
+
+    
+    <!-- Total Components Legend Item -->
+    <rect x="104" y="139" width="14" height="10" rx="2" fill="var(--total-color)" />
+    <text x="126" y="148" class="label-text" font-weight="bold">Total Components (5)</text>
+    
   </g>
 
   <!-- Footer / Watermark -->
