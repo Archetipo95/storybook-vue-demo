@@ -10,7 +10,11 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: read
+  contents: write
+  pages: write
+  pull-requests: write
+  actions: read
+  issues: write
 
 jobs:
   publish:
