@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Button, Badge, Input, Card, Alert } from './components'
+import { Button, Badge, Input, Card, Alert, Avatar } from './components'
 import { useTheme } from './composables/useTheme'
 
 const { theme, toggleTheme } = useTheme()
@@ -129,6 +129,24 @@ const handleSimulateDeploy = () => {
             <Alert variant="success" title="Accessible" :dismissible="false">
               Components follow WAI-ARIA best practices.
             </Alert>
+          </div>
+        </Card>
+
+        <Card variant="elevated">
+          <template #header>
+            <div class="card-header-flex">
+              <span>Avatars</span>
+              <Badge variant="primary">New</Badge>
+            </div>
+          </template>
+          <p class="section-desc">
+            User avatars with initials, image fallbacks, and status indicators.
+          </p>
+          <div class="badge-group" style="align-items: center;">
+            <Avatar name="Sarah Connor" size="lg" status="online" />
+            <Avatar name="Martin Masevski" size="md" status="busy" />
+            <Avatar name="Alex Chen" size="md" status="away" />
+            <Avatar size="sm" />
           </div>
         </Card>
 
