@@ -3,9 +3,9 @@
   "storybookVersion": "v10.6.0",
   "storiesCount": 16,
   "componentsCount": 4,
-  "totalComponents": 5,
-  "coveragePercent": 80,
+  "totalComponents": 6,
+  "coveragePercent": 67,
   "docsCount": 4,
   "hasStoriesData": true,
-  "generatedAt": "2026-09-13T19:11:53.976Z"
+  "generatedAt": "2026-09-13T19:15:04.643Z"
 }
