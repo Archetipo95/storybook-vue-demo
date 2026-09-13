@@ -72,8 +72,11 @@
   <!-- X Tick Labels -->
   <g id="x-labels">
     
-      <path d="M 440.00 394.28 Q 439.72 396.14 439.25 398.00 Q 439.50 399.85 440.00 401.71" class="axis" />
-      <text x="440.0" y="419.0" class="label-text" text-anchor="middle">2026-09-13</text>
+      <path d="M 75.00 394.28 Q 74.72 396.14 74.25 398.00 Q 74.50 399.85 75.00 401.71" class="axis" />
+      <text x="75.0" y="419.0" class="label-text" text-anchor="middle">2026-09-13</text>
+    
+      <path d="M 805.00 394.33 Q 804.63 396.17 804.59 398.01 Q 804.89 399.85 805.00 401.69" class="axis" />
+      <text x="805.0" y="419.0" class="label-text" text-anchor="middle">2026-09-13</text>
     
     <text x="440.0" y="446" class="axis-label">Date</text>
   </g>
@@ -81,28 +84,32 @@
   <!-- Series Curves -->
   <g id="series-curves">
     <!-- Components Curve -->
-    <path d="M 436.00 327.63 A 4 4 0 1 0 444.00 327.63" class="components-line" />
-    <path d="M 436.00 327.63 A 4 4 0 1 0 444.00 327.63" class="components-line" opacity="0.6" />
+    <path d="M 75.00 327.63 C 196.38 327.76 683.03 327.78 805.00 327.63" class="components-line" />
+    <path d="M 75.00 327.63 C 196.64 327.65 683.48 327.95 805.00 327.63" class="components-line" opacity="0.6" />
 
     <!-- Stories Curve -->
-    <path d="M 436.00 125.53 A 4 4 0 1 0 444.00 125.53" class="stories-line" />
-    <path d="M 436.00 125.53 A 4 4 0 1 0 444.00 125.53" class="stories-line" opacity="0.6" />
+    <path d="M 75.00 125.53 C 196.97 125.45 683.58 125.62 805.00 125.53" class="stories-line" />
+    <path d="M 75.00 125.53 C 196.35 125.63 683.56 125.69 805.00 125.53" class="stories-line" opacity="0.6" />
   </g>
 
   <!-- Data Point Markers -->
   <g id="data-points">
     
-      <circle cx="440.0" cy="327.6" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="75.0" cy="327.6" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+    
+      <circle cx="805.0" cy="327.6" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
     
-      <circle cx="440.0" cy="125.5" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="75.0" cy="125.5" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+    
+      <circle cx="805.0" cy="125.5" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
   </g>
 
   <!-- Legend Box -->
   <g id="legend" transform="translate(0, 0)">
     <rect x="90" y="87" width="220" height="58" rx="4" fill="var(--legend-bg)" />
-    <path d="M 88.14 87.00 Q 102.07 87.15 116.00 87.46 Q 129.94 87.57 143.87 87.64 Q 157.81 87.71 171.74 87.55 Q 185.68 87.43 199.61 87.17 Q 213.54 87.25 227.48 87.58 Q 241.41 87.47 255.35 87.22 Q 269.28 87.18 283.22 86.94 Q 297.15 86.79 311.08 87.00 M 310.00 85.26 Q 309.88 100.53 310.04 115.80 Q 310.14 131.07 310.00 146.35 M 311.85 145.00 Q 297.89 145.33 283.94 145.40 Q 269.99 144.89 256.04 144.71 Q 242.08 145.13 228.13 145.72 Q 214.18 145.10 200.23 144.39 Q 186.28 145.22 172.32 145.74 Q 158.37 145.86 144.42 145.74 Q 130.47 145.21 116.51 144.31 Q 102.56 144.53 88.61 145.00 M 90.00 146.64 Q 90.54 131.43 90.75 116.23 Q 90.43 101.03 90.00 85.82" class="legend-box" fill="none" />
+    <path d="M 88.80 87.00 Q 102.73 86.92 116.66 86.85 Q 130.60 87.41 144.53 87.55 Q 158.46 87.18 172.40 86.50 Q 186.33 86.35 200.26 86.35 Q 214.19 86.34 228.13 86.60 Q 242.06 87.11 255.99 87.29 Q 269.93 86.87 283.86 86.28 Q 297.79 86.60 311.72 87.00 M 310.00 85.32 Q 310.32 100.51 310.41 115.70 Q 310.39 130.90 310.00 146.09 M 311.31 145.00 Q 297.39 145.14 283.47 145.66 Q 269.55 145.02 255.63 144.36 Q 241.71 144.46 227.79 144.77 Q 213.87 145.08 199.95 145.56 Q 186.03 145.24 172.11 144.83 Q 158.19 144.74 144.27 144.67 Q 130.35 144.52 116.43 144.39 Q 102.51 144.72 88.60 145.00 M 90.00 146.59 Q 89.83 131.44 89.57 116.28 Q 89.86 101.13 90.00 85.98" class="legend-box" fill="none" />
 
     <!-- Stories Legend Item -->
     <rect x="104" y="101" width="14" height="10" rx="2" fill="var(--stories-color)" />
