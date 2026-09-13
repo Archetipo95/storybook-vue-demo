@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Button, Badge, Input, Card } from './components'
+import { Button, Badge, Input, Card, Alert } from './components'
 import { useTheme } from './composables/useTheme'
 
 const { theme, toggleTheme } = useTheme()
@@ -41,6 +41,12 @@ const handleSimulateDeploy = () => {
     </header>
 
     <main class="app-main">
+      <div class="banner-area">
+        <Alert variant="info" title="Component Coverage Tracking" :dismissible="true">
+          This demo showcases Storybook component coverage: components with stories are documented in Storybook, while uncovered components appear in the total component count on the growth chart.
+        </Alert>
+      </div>
+
       <section class="grid-section">
         <Card variant="elevated">
           <template #header>
@@ -146,11 +152,15 @@ const handleSimulateDeploy = () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--color-border);
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.banner-area {
+  margin-bottom: 2rem;
 }
 
 .brand {
