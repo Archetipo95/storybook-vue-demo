@@ -4,10 +4,6 @@ on:
   pull_request_target:
     types: [closed]
 
-concurrency:
-  group: storybook-pages-${{ github.repository }}
-  cancel-in-progress: false
-
 permissions:
   contents: write
   pages: write
