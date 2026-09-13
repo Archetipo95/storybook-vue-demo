@@ -1,12 +1,14 @@
 # Vue 3 + Storybook 8 Demo
 
-[![Storybook](https://Archetipo95.github.io/storybook-vue-demo/badges/storybook.svg)](https://Archetipo95.github.io/storybook-vue-demo/badges)
-[![Stories](https://Archetipo95.github.io/storybook-vue-demo/badges/stories.svg)](https://Archetipo95.github.io/storybook-vue-demo/badges)
-[![Components](https://Archetipo95.github.io/storybook-vue-demo/badges/components.svg)](https://Archetipo95.github.io/storybook-vue-demo/badges)
+[![Storybook](https://archetipo95.github.io/storybook-vue-demo/badges/storybook.svg)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Stories](https://archetipo95.github.io/storybook-vue-demo/badges/stories.svg)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Components](https://archetipo95.github.io/storybook-vue-demo/badges/components.svg)](https://archetipo95.github.io/storybook-vue-demo/)
 [![CI](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/ci.yml)
 [![Deploy Storybook](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/deploy.yml/badge.svg)](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/deploy.yml)
 
 A minimal, production-grade test and demo repository for [Security-Hardened Storybook to GitHub Pages](https://github.com/Archetipo95/storybook-github-pages).
+
+🚀 **Live Storybook:** [https://archetipo95.github.io/storybook-vue-demo/](https://archetipo95.github.io/storybook-vue-demo/)
 
 Features:
 - ⚡ **Vue 3.5 + Vite + TypeScript**: Minimal, type-safe Single File Components using `<script setup lang="ts">`.
@@ -64,7 +66,6 @@ This repository uses [`Archetipo95/storybook-github-pages`](https://github.com/A
 - name: Deploy Storybook to GitHub Pages
   uses: Archetipo95/storybook-github-pages@v1
   with:
-    build_script: 'npm run build-storybook'
     path: 'storybook-static'
     generate_badges: 'true'
 ```
