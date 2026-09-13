@@ -1,0 +1,42 @@
+name: Storybook PR Preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+concurrency:
+  group: preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    name: Build & Publish PR Preview
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Storybook Preview
+        if: github.event.action != 'closed'
+        uses: Archetipo95/storybook-github-pages/preview-build@v1
+        with:
+          build_script: 'npm run build-storybook'
+          path: 'storybook-static'
+          generate_badges: 'true'
+
+      - name: Publish or Cleanup Preview
+        uses: Archetipo95/storybook-github-pages/preview-publish@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
