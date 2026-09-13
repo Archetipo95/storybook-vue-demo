@@ -1,8 +1,10 @@
 # Vue 3 + Storybook 10 Demo
 
 [![Storybook](https://archetipo95.github.io/storybook-vue-demo/badges/storybook.svg)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Coverage](https://archetipo95.github.io/storybook-vue-demo/badges/coverage.svg)](https://archetipo95.github.io/storybook-vue-demo/)
 [![Stories](https://archetipo95.github.io/storybook-vue-demo/badges/stories.svg)](https://archetipo95.github.io/storybook-vue-demo/)
 [![Components](https://archetipo95.github.io/storybook-vue-demo/badges/components.svg)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Status](https://archetipo95.github.io/storybook-vue-demo/badges/status.svg)](https://archetipo95.github.io/storybook-vue-demo/)
 [![CI](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/ci.yml)
 [![Deploy Storybook](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/deploy.yml/badge.svg)](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/deploy.yml)
 
@@ -26,6 +28,8 @@ Features:
 
 ## 📦 Components Included
 
+- **`Alert`**: Contextual feedback alerts (`info`, `success`, `warning`, `danger`) with optional dismissal and icons.
+- **`Avatar`**: User avatar with image fallback to initials and status dot indicator.
 - **`Button`**: Customizable variants (`primary`, `secondary`, `outline`, `ghost`, `danger`), sizes, loading spinner, and interaction test stories.
 - **`Badge`**: Visual status indicators with dot support and semantic color tokens.
 - **`Input`**: Accessible text input with `v-model` binding, error states, and helper text.
