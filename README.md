@@ -32,11 +32,10 @@ Features:
 
 - **`Alert`**: Contextual feedback alerts (`info`, `success`, `warning`, `danger`) with optional dismissal and icons.
 - **`Avatar`**: User avatar with image fallback to initials and status dot indicator.
-- **`Button`**: Customizable variants (`primary`, `secondary`, `outline`, `ghost`, `danger`), sizes, loading spinner, and interaction test stories.
 - **`Badge`**: Visual status indicators with dot support and semantic color tokens.
-- **`Input`**: Accessible text input with `v-model` binding, error states, and helper text.
+- **`Button`**: Customizable variants (`primary`, `secondary`, `outline`, `ghost`, `danger`), sizes, loading spinner, and interaction test stories.
 - **`Card`**: Structured container with `#header`, default body, and `#footer` slots.
-- **`Alert`**: Contextual feedback alerts (`info`, `success`, `warning`, `danger`) with optional dismissal and icons.
+- **`Input`**: Accessible text input with `v-model` binding, error states, and helper text.
 
 ---
 
