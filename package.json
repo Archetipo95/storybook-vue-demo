@@ -2,12 +2,10 @@
   "name": "storybook-vue-demo",
   "version": "1.0.0",
   "private": true,
-  "description": "Production-ready Vue 3 + TypeScript component library with Storybook 8 and automated GitHub Pages deployment",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "type-check": "tsc --noEmit"
@@ -16,16 +14,13 @@
     "vue": "^3.5.42"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^8.6.18",
-    "@storybook/addon-essentials": "^8.6.18",
-    "@storybook/addon-interactions": "^8.6.18",
-    "@storybook/blocks": "^8.6.18",
-    "@storybook/test": "^8.6.18",
-    "@storybook/vue3-vite": "^8.6.18",
+    "@storybook/addon-a11y": "^10.6.0",
+    "@storybook/addon-docs": "^10.6.0",
+    "@storybook/vue3-vite": "^10.6.0",
     "@types/node": "^26.5.1",
-    "@vitejs/plugin-vue": "^5.2.1",
-    "storybook": "^8.6.18",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "storybook": "^10.6.0",
     "typescript": "^5.9.3",
-    "vite": "^6.4.3"
+    "vite": "^8.3.0"
   }
 }

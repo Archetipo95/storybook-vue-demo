@@ -1,4 +1,4 @@
-# Vue 3 + Storybook 8 Demo
+# Vue 3 + Storybook 10 Demo
 
 [![Storybook](https://archetipo95.github.io/storybook-vue-demo/badges/storybook.svg)](https://archetipo95.github.io/storybook-vue-demo/)
 [![Stories](https://archetipo95.github.io/storybook-vue-demo/badges/stories.svg)](https://archetipo95.github.io/storybook-vue-demo/)
@@ -11,8 +11,8 @@ A minimal, production-grade test and demo repository for [Security-Hardened Stor
 🚀 **Live Storybook:** [https://archetipo95.github.io/storybook-vue-demo/](https://archetipo95.github.io/storybook-vue-demo/)
 
 Features:
-- ⚡ **Vue 3.5 + Vite + TypeScript**: Minimal, type-safe Single File Components using `<script setup lang="ts">`.
-- 📚 **Storybook 8**: Autodocs, interactive play functions (`@storybook/test`), and accessibility checks (`@storybook/addon-a11y`).
+- ⚡ **Vue 3.5 + Vite 8 + TypeScript**: Minimal, type-safe Single File Components using `<script setup lang="ts">`.
+- 📚 **Storybook 10**: Autodocs, interactive play functions (`storybook/test`), and accessibility checks (`@storybook/addon-a11y`).
 - 🚀 **Automated GitHub Pages Deployment**: Fully automated deployment with generated dynamic SVG badges via `Archetipo95/storybook-github-pages@v1`.
 - 🔍 **PR Previews**: Isolated Storybook previews generated for pull requests with automatic comment notifications and cleanup.
 
