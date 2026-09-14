@@ -36,10 +36,6 @@ jobs:
       - name: Build Storybook
         run: npm run build-storybook
 
-      - name: Generate Storybook Badges
-        run: node -e 'import("storybook-github-pages/src/generate-badges.js").catch(() => {})' || true
-        # Or using npx/direct invocation if publisher handles badges or we invoke generate-badges
-
       - name: Checkout Pages branch
         uses: actions/checkout@v4
         with:
