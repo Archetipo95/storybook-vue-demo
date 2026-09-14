@@ -9,6 +9,12 @@ const config: StorybookConfig = {
   framework: {
     name: '@storybook/vue3-vite',
     options: {}
+  },
+  async viteFinal(config) {
+    return {
+      ...config,
+      base: './'
+    }
   }
 }
 
