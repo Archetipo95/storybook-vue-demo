@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Button, Badge, Input, Card, Alert } from './components'
+import { Button, Badge, Input, Card, Alert, Avatar } from './components'
 import { useTheme } from './composables/useTheme'
 
 const { theme, toggleTheme } = useTheme()
@@ -33,7 +33,7 @@ const handleSimulateDeploy = () => {
       </div>
       <div class="actions">
         <Badge variant="primary" size="md">Vue 3.5</Badge>
-        <Badge variant="info" size="md">Storybook 8</Badge>
+        <Badge variant="info" size="md">Storybook 10</Badge>
         <Button variant="outline" size="sm" @click="toggleTheme">
           {{ theme === 'light' ? '🌙 Dark' : '☀️ Light' }}
         </Button>
@@ -112,6 +112,41 @@ const handleSimulateDeploy = () => {
             <Badge variant="warning">Pending</Badge>
             <Badge variant="danger" :dot="true">Error</Badge>
             <Badge variant="info">Info</Badge>
+          </div>
+        </Card>
+
+        <Card variant="elevated">
+          <template #header>
+            <div class="card-header-flex">
+              <span>Alert Notifications</span>
+              <Badge variant="info">New</Badge>
+            </div>
+          </template>
+          <div class="form-stack">
+            <Alert variant="info" title="PR Preview Active" :dismissible="true">
+              Storybook PR preview is automatically published to GitHub Pages.
+            </Alert>
+            <Alert variant="success" title="Accessible" :dismissible="false">
+              Components follow WAI-ARIA best practices.
+            </Alert>
+          </div>
+        </Card>
+
+        <Card variant="elevated">
+          <template #header>
+            <div class="card-header-flex">
+              <span>Avatars</span>
+              <Badge variant="primary">New</Badge>
+            </div>
+          </template>
+          <p class="section-desc">
+            User avatars with initials, image fallbacks, and status indicators.
+          </p>
+          <div class="badge-group" style="align-items: center;">
+            <Avatar name="Sarah Connor" size="lg" status="online" />
+            <Avatar name="Martin Masevski" size="md" status="busy" />
+            <Avatar name="Alex Chen" size="md" status="away" />
+            <Avatar size="sm" />
           </div>
         </Card>
 
