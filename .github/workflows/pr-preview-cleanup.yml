@@ -9,15 +9,6 @@ permissions:
   pages: write
 
 jobs:
-  # Pinned to v1.6.1 instead of the latest v1.7.0: the v1.7.0 reusable
-  # cleanup workflow calls the new GitHub Deployments API to deactivate
-  # closed-PR preview deployments, but its own job `permissions:` block
-  # was not updated to include `deployments: write`. Any run that
-  # actually removes a preview directory then fails with a 403 from the
-  # Deployments API before the job can finish, because a reusable
-  # workflow's granted token scopes are capped by its own declared job
-  # permissions regardless of what this caller grants. Tracked upstream;
-  # bump back to @v1 once fixed.
   cleanup:
-    uses: Archetipo95/storybook-github-pages/.github/workflows/pr-preview-cleanup.yml@v1.6.1
+    uses: Archetipo95/storybook-github-pages/.github/workflows/pr-preview-cleanup.yml@v1.7.1
     secrets: inherit
