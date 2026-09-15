@@ -83,6 +83,10 @@ This repository uses [`Archetipo95/storybook-github-pages`](https://github.com/A
     generate_stats_graph: "true"
 ```
 
+Main and pull-request Storybooks share the same soft access gate. Set the
+`STORYBOOK_PASSCODE_HASH` repository secret to the lowercase SHA-256 hash of
+the passcode before running either publishing workflow.
+
 ---
 
 ## 📄 License
