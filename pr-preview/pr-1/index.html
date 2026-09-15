@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<meta name="robots" content="noindex, nofollow, noarchive">
+
     <meta charset="utf-8" />
 
     <title>storybook - Storybook</title>
@@ -148,5 +150,63 @@
 
       import './sb-manager/runtime.js';
     </script>
-  </body>
+  <style id="storybook-passcode-gate-style">
+body > *:not(#storybook-passcode-gate) { visibility: hidden !important; }
+#storybook-passcode-gate { position: fixed; inset: 0; z-index: 2147483647; display: grid; place-items: center; background: #111827; color: #f9fafb; font: 16px system-ui, sans-serif; }
+#storybook-passcode-gate form { width: min(90vw, 20rem); padding: 2rem; border-radius: .75rem; background: #1f2937; box-shadow: 0 1rem 3rem #0008; }
+#storybook-passcode-gate h1 { margin: 0 0 .5rem; font-size: 1.25rem; }
+#storybook-passcode-gate p { margin: 0 0 1rem; color: #d1d5db; }
+#storybook-passcode-gate input, #storybook-passcode-gate button { box-sizing: border-box; width: 100%; min-height: 2.75rem; margin-top: .75rem; padding: .5rem .75rem; border: 1px solid #6b7280; border-radius: .375rem; font: inherit; }
+#storybook-passcode-gate button { border: 0; background: #2563eb; color: white; cursor: pointer; }
+#storybook-passcode-gate [role="alert"] { min-height: 1.25rem; margin-top: .75rem; color: #fca5a5; }
+</style>
+<div id="storybook-passcode-gate">
+  <form>
+    <h1>Private Storybook</h1>
+    <p>Enter the passcode to continue.</p>
+    <input type="password" autocomplete="current-password" aria-label="Passcode" required>
+    <button type="submit">Continue</button>
+    <div role="alert" aria-live="polite"></div>
+  </form>
+</div>
+<script id="storybook-passcode-gate-script">
+(() => {
+  const config = {"hash":"44445948d304f931050bd0bd3107cebf1abfede7809d29a43b596ce565e9c9fa","sessionMs":86400000};
+  const key = 'storybook-passcode-authenticated';
+  const gate = document.getElementById('storybook-passcode-gate');
+  const form = gate.querySelector('form');
+  const input = form.querySelector('input');
+  const alert = form.querySelector('[role="alert"]');
+  const now = () => Date.now();
+  const isValid = () => {
+    try {
+      return Number(sessionStorage.getItem(key)) > now();
+    } catch {
+      return false;
+    }
+  };
+  const reveal = () => { gate.remove(); document.querySelector('#storybook-passcode-gate-style')?.remove(); };
+  const digest = async value => Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(value)))).map(byte => byte.toString(16).padStart(2, '0')).join('');
+  if (isValid()) reveal();
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+    alert.textContent = '';
+    try {
+      if ((await digest(input.value)) !== config.hash) {
+        alert.textContent = 'Incorrect passcode.';
+        input.select();
+        return;
+      }
+      try {
+        sessionStorage.setItem(key, String(now() + config.sessionMs));
+      } catch {
+        // Reveal this page even when browser storage is blocked.
+      }
+      reveal();
+    } catch {
+      alert.textContent = 'Passcode validation is unavailable in this browser.';
+    }
+  });
+})();
+</script></body>
 </html>
