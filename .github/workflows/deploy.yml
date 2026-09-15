@@ -52,5 +52,3 @@ jobs:
           source_directory: ${{ github.workspace }}/storybook-static
           managed_directories: pr-preview
           site_url: https://archetipo95.github.io/storybook-vue-demo/
-          enable_passcode_gate: true
-          passcode_hash: ${{ secrets.STORYBOOK_PASSCODE_HASH }}

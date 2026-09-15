@@ -18,7 +18,4 @@ jobs:
     uses: Archetipo95/storybook-github-pages/.github/workflows/pr-preview-publish.yml@v1.8.1
     with:
       workflow_run_id: ${{ github.event.workflow_run.id }}
-      enable_passcode_gate: true
-      passcode_session_hours: 24
-    secrets:
-      passcode_hash: ${{ secrets.STORYBOOK_PASSCODE_HASH }}
+    secrets: inherit
