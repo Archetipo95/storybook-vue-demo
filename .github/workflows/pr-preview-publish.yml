@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   publish:
-    uses: Archetipo95/storybook-github-pages/.github/workflows/pr-preview-publish.yml@3f05bab7bad2df6e1af410c0bda21bd3d68f9546
+    uses: Archetipo95/storybook-github-pages/.github/workflows/pr-preview-publish.yml@cbf1582e05e4995f6fcf2152a77f438232578e6d
     with:
       workflow_run_id: ${{ github.event.workflow_run.id }}
       enable_passcode_gate: true
