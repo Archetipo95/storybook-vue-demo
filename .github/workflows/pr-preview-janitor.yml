@@ -1,0 +1,19 @@
+name: PR Preview Janitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 4 * * *'
+
+permissions:
+  contents: write
+  pages: write
+  pull-requests: read
+
+jobs:
+  janitor:
+    uses: Archetipo95/storybook-github-pages/.github/workflows/pr-preview-janitor.yml@v1.6.1
+    with:
+      preview_root: pr-preview
+      pages_branch: gh-pages
+    secrets: inherit
