@@ -1,3 +1,2 @@
 export { default as Alert } from './Alert.vue'
-export * from './types'
-
+export type { AlertProps } from './types'
