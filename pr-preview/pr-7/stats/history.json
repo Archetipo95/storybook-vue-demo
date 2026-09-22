@@ -150,9 +150,20 @@
     "docs": 4
   },
   {
-    "timestamp": "2026-09-22T08:01:14.507Z",
+    "timestamp": "2026-09-22T08:14:57.194Z",
     "date": "2026-09-22",
-    "commit": "2f7ecbc",
+    "commit": "197d959",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-22T08:15:14.092Z",
+    "date": "2026-09-22",
+    "commit": "f8f2ae5",
     "version": "deployed",
     "components": 6,
     "totalComponents": 6,
