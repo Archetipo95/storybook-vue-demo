@@ -31,7 +31,6 @@ Features:
 ## 📦 Components Included
 
 - **`Alert`**: Contextual feedback alerts (`info`, `success`, `warning`, `danger`) with optional dismissal and icons.
-- **`Avatar`**: User avatar with image fallback to initials and status dot indicator.
 - **`Badge`**: Visual status indicators with dot support and semantic color tokens.
 - **`Button`**: Customizable variants (`primary`, `secondary`, `outline`, `ghost`, `danger`), sizes, loading spinner, and interaction test stories.
 - **`Card`**: Structured container with `#header`, default body, and `#footer` slots.
