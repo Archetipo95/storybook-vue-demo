@@ -161,13 +161,13 @@
     "docs": 4
   },
   {
-    "timestamp": "2026-09-22T08:15:14.092Z",
+    "timestamp": "2026-09-22T08:26:43.234Z",
     "date": "2026-09-22",
-    "commit": "f8f2ae5",
-    "version": "deployed",
+    "commit": "36bb266",
+    "version": "v10.6.0",
     "components": 6,
-    "totalComponents": 6,
-    "coveragePercent": 100,
+    "totalComponents": 7,
+    "coveragePercent": 86,
     "stories": 26,
     "docs": 6
   }
