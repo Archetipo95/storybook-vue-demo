@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "status": "published • 5a4e75e",
+  "build": "passed • 5a4e75e",
+  "commit": "5a4e75e",
+  "storybookVersion": "v10.6.0",
+  "storiesCount": 26,
+  "componentsCount": 6,
+  "totalComponents": 7,
+  "coveragePercent": 86,
+  "docsCount": 6,
+  "hasStoriesData": true,
+  "tests": null,
+  "generatedAt": "2026-09-22T07:17:24.900Z"
+}
