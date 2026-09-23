@@ -37,8 +37,9 @@ jobs:
         run: npm run build-storybook
 
       - name: Package and upload preview bundle
-        uses: Archetipo95/storybook-github-pages/preview-build@v1.9.4
+        uses: Archetipo95/storybook-github-pages/preview-build@v1.9.6
         with:
           source_path: 'storybook-static'
           generate_badges: 'true'
           preview_root: 'pr-preview'
+          smoke_test: 'true'
