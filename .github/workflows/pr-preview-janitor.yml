@@ -10,11 +10,26 @@ permissions:
   pages: write
   deployments: write
   pull-requests: read
+  issues: write
 
 jobs:
   janitor:
-    uses: Archetipo95/storybook-github-pages/.github/workflows/pr-preview-janitor.yml@v1.9.4
-    with:
-      preview_root: pr-preview
-      pages_branch: gh-pages
-    secrets: inherit
+    name: Prune stale preview directories
+    concurrency:
+      group: storybook-pages-${{ github.repository }}
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Pages branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: gh-pages
+          path: pages-repo
+          fetch-depth: 0
+
+      - name: Prune stale preview directories
+        uses: Archetipo95/storybook-github-pages/preview-janitor@1a922a815952feaeb895f65b7f5dbf673c2fd204 # v1.9.0
+        with:
+          pages_repo: ${{ github.workspace }}/pages-repo
+          pages_branch: gh-pages
+          preview_root: pr-preview
