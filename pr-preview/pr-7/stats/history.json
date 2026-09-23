@@ -161,9 +161,31 @@
     "docs": 4
   },
   {
-    "timestamp": "2026-09-22T08:26:43.234Z",
-    "date": "2026-09-22",
-    "commit": "36bb266",
+    "timestamp": "2026-09-23T07:12:57.056Z",
+    "date": "2026-09-23",
+    "commit": "23b527d",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-23T07:29:47.814Z",
+    "date": "2026-09-23",
+    "commit": "617a032",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-23T07:30:14.291Z",
+    "date": "2026-09-23",
+    "commit": "340450e",
     "version": "v10.6.0",
     "components": 6,
     "totalComponents": 7,
