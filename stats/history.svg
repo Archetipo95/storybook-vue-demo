@@ -78,20 +78,17 @@
       <path d="M 75.00 394.28 Q 74.72 396.14 74.25 398.00 Q 74.50 399.85 75.00 401.71" class="axis" />
       <text x="75.0" y="419.0" class="label-text" text-anchor="middle">2026-09-13</text>
     
-      <path d="M 231.43 394.33 Q 231.05 396.17 231.02 398.01 Q 231.32 399.85 231.43 401.69" class="axis" />
-      <text x="231.4" y="419.0" class="label-text" text-anchor="middle">2026-09-13</text>
+      <path d="M 269.67 394.33 Q 269.29 396.17 269.26 398.01 Q 269.56 399.85 269.67 401.69" class="axis" />
+      <text x="269.7" y="419.0" class="label-text" text-anchor="middle">2026-09-13</text>
     
-      <path d="M 387.86 394.29 Q 388.17 396.17 388.59 398.04 Q 388.34 399.92 387.86 401.80" class="axis" />
-      <text x="387.9" y="419.0" class="label-text" text-anchor="middle">2026-09-14</text>
+      <path d="M 464.33 394.29 Q 464.64 396.17 465.07 398.04 Q 464.81 399.92 464.33 401.80" class="axis" />
+      <text x="464.3" y="419.0" class="label-text" text-anchor="middle">2026-09-15</text>
     
-      <path d="M 544.29 394.18 Q 543.94 396.07 543.95 397.97 Q 544.03 399.87 544.29 401.76" class="axis" />
-      <text x="544.3" y="419.0" class="label-text" text-anchor="middle">2026-09-15</text>
+      <path d="M 659.00 394.18 Q 658.65 396.07 658.67 397.97 Q 658.74 399.87 659.00 401.76" class="axis" />
+      <text x="659.0" y="419.0" class="label-text" text-anchor="middle">2026-09-22</text>
     
-      <path d="M 700.71 394.33 Q 700.33 396.22 700.32 398.11 Q 700.38 400.01 700.71 401.90" class="axis" />
-      <text x="700.7" y="419.0" class="label-text" text-anchor="middle">2026-09-22</text>
-    
-      <path d="M 805.00 394.33 Q 805.17 396.18 805.47 398.02 Q 805.39 399.87 805.00 401.72" class="axis" />
-      <text x="805.0" y="419.0" class="label-text" text-anchor="middle">2026-09-22</text>
+      <path d="M 805.00 394.33 Q 804.62 396.22 804.61 398.11 Q 804.67 400.01 805.00 401.90" class="axis" />
+      <text x="805.0" y="419.0" class="label-text" text-anchor="middle">2026-09-23</text>
     
     <text x="440.0" y="446" class="axis-label">Date</text>
   </g>
@@ -100,17 +97,17 @@
   <g id="series-curves">
     
     <!-- Total Components Curve -->
-    <path d="M 75.00 352.33 C 83.61 352.16 109.98 354.01 126.97 352.50 C 144.18 350.14 161.96 345.57 179.05 341.60 C 196.21 337.74 213.63 332.52 231.18 331.19 C 248.53 328.78 265.98 330.73 283.66 330.77 C 301.15 330.97 317.93 330.72 335.47 330.86 C 353.25 330.55 370.21 331.33 387.88 331.12 C 405.71 330.98 422.50 331.06 439.81 330.98 C 457.35 331.11 474.47 330.87 492.26 331.02 C 509.70 330.60 526.51 331.00 544.43 331.21 C 561.91 330.76 578.86 331.11 596.19 330.87 C 614.07 331.00 631.14 332.65 648.65 330.77 C 665.57 329.41 682.86 320.26 700.61 320.33 C 717.99 320.78 734.98 329.14 752.94 330.87 C 770.53 332.98 795.99 331.14 805.00 331.00" class="total-line" />
-    <path d="M 75.00 352.33 C 84.02 352.48 109.57 354.32 127.02 352.18 C 144.67 350.68 161.56 345.35 179.27 341.80 C 196.73 338.12 214.10 332.82 231.47 331.17 C 249.11 329.20 265.93 330.95 283.74 330.86 C 300.96 330.90 318.02 331.24 335.61 331.01 C 352.79 330.86 370.39 330.82 387.77 331.12 C 404.97 330.86 422.39 330.81 439.90 330.98 C 457.45 330.67 475.01 330.65 492.11 330.97 C 509.24 330.74 526.80 331.18 544.43 331.03 C 561.86 330.80 579.06 330.84 596.51 331.03 C 613.75 331.25 631.32 332.90 648.73 330.96 C 665.62 329.20 683.62 320.42 700.63 320.48 C 718.12 320.15 735.44 329.42 752.77 330.84 C 769.91 332.66 796.23 330.65 805.00 331.00" class="total-line" opacity="0.6" />
+    <path d="M 75.00 352.33 C 82.70 352.08 106.95 354.49 123.53 352.11 C 139.68 350.29 156.29 344.76 172.43 341.65 C 188.15 337.83 204.29 332.50 221.08 330.77 C 236.96 329.55 253.49 331.25 269.90 330.99 C 285.77 331.06 301.73 330.95 318.32 331.06 C 334.26 330.87 351.02 331.03 367.09 330.80 C 382.82 331.00 399.72 331.42 415.79 330.88 C 431.70 331.11 447.63 330.73 464.46 331.00 C 480.50 330.87 496.94 330.54 512.81 331.09 C 528.75 330.93 545.24 331.00 561.61 331.22 C 577.39 330.91 594.27 332.52 610.48 331.10 C 626.23 329.37 643.25 320.54 658.87 320.48 C 674.88 319.89 691.66 329.40 707.42 331.09 C 723.85 333.17 740.20 331.01 756.37 331.03 C 772.68 331.47 797.31 330.97 805.00 331.00" class="total-line" />
+    <path d="M 75.00 352.33 C 82.85 352.28 107.78 353.83 123.67 352.28 C 139.58 350.79 155.91 345.25 172.18 341.59 C 188.47 337.93 204.60 333.02 220.86 330.93 C 237.00 329.03 253.24 330.96 269.70 330.84 C 286.14 330.65 302.04 330.94 318.19 330.87 C 334.45 331.18 351.07 331.05 367.10 330.90 C 383.24 330.84 399.61 331.06 415.64 331.12 C 432.02 331.13 448.43 330.92 464.17 330.99 C 480.84 331.08 496.60 331.29 513.01 330.91 C 529.18 331.20 545.28 330.68 561.50 330.94 C 577.81 330.65 593.85 332.63 610.46 330.87 C 626.43 329.53 642.49 320.51 658.97 320.38 C 674.93 320.37 691.24 328.95 707.83 331.15 C 723.60 332.89 739.93 330.96 756.48 330.90 C 772.33 331.06 796.69 330.97 805.00 331.00" class="total-line" opacity="0.6" />
     
 
     <!-- Covered Components Curve -->
-    <path d="M 75.00 352.33 C 83.46 351.95 109.71 351.98 127.31 352.30 C 144.64 352.27 162.17 352.37 179.18 352.29 C 197.05 352.20 213.64 352.72 231.50 352.39 C 248.80 351.98 266.36 351.87 283.71 352.36 C 300.82 352.04 318.14 352.40 335.50 352.44 C 352.60 352.12 370.14 352.33 387.86 352.25 C 405.26 352.01 422.31 352.37 439.99 352.32 C 457.70 352.05 475.15 352.17 491.93 352.27 C 509.53 352.64 527.33 352.15 544.36 352.30 C 561.97 352.65 579.25 352.26 596.31 352.41 C 614.30 351.95 631.50 355.70 648.50 352.56 C 665.98 348.48 683.53 331.12 700.89 330.92 C 717.77 330.54 735.30 349.02 753.07 352.18 C 770.38 355.91 796.46 352.18 805.00 352.33" class="components-line" />
-    <path d="M 75.00 352.33 C 83.41 352.04 109.74 352.43 127.09 352.32 C 144.87 352.12 162.23 352.13 179.18 352.48 C 196.36 352.56 214.34 352.05 231.52 352.43 C 248.81 352.02 266.08 352.42 283.45 352.47 C 300.82 352.46 318.44 352.61 335.69 352.42 C 353.34 352.03 370.74 352.06 387.76 352.16 C 404.93 352.52 422.97 352.28 440.17 352.30 C 457.46 352.10 474.57 352.04 492.09 352.16 C 509.24 352.64 526.78 352.63 544.46 352.20 C 561.44 352.41 578.80 352.42 596.38 352.45 C 613.56 351.99 631.16 355.54 648.51 352.31 C 665.77 348.60 683.11 330.99 700.75 330.89 C 718.07 330.69 735.27 348.45 752.77 352.21 C 770.45 355.76 796.60 352.45 805.00 352.33" class="components-line" opacity="0.6" />
+    <path d="M 75.00 352.33 C 83.06 351.98 107.78 352.27 123.73 352.30 C 140.15 352.37 155.89 352.24 172.53 352.27 C 188.15 352.72 204.93 352.46 220.99 352.16 C 237.39 351.87 253.72 352.39 269.60 352.18 C 285.70 352.40 301.68 352.55 318.08 352.23 C 334.22 352.33 350.78 352.17 367.01 352.17 C 382.92 352.37 399.42 352.31 415.83 352.19 C 432.28 352.17 447.68 352.22 464.34 352.49 C 480.98 352.15 496.94 352.26 513.15 352.49 C 529.42 352.26 545.21 352.49 561.91 352.14 C 578.20 352.15 593.97 356.34 610.35 352.19 C 626.76 348.90 643.13 330.84 658.84 330.77 C 675.04 331.24 691.88 348.47 707.74 352.34 C 724.04 355.73 739.71 351.91 756.32 352.40 C 772.41 352.30 797.38 352.03 805.00 352.33" class="components-line" />
+    <path d="M 75.00 352.33 C 83.43 352.13 107.23 352.63 123.51 352.45 C 140.18 352.05 156.30 352.52 172.34 352.18 C 188.44 352.42 204.53 352.60 220.93 352.40 C 237.33 352.61 253.40 352.51 269.79 352.18 C 286.15 352.06 301.92 352.00 318.18 352.42 C 334.90 352.28 351.12 352.27 367.04 352.22 C 383.03 352.04 399.35 351.99 415.52 352.49 C 431.76 352.63 448.45 352.06 464.22 352.37 C 480.30 352.42 496.69 352.57 512.88 352.16 C 529.19 351.99 545.32 352.29 561.58 352.24 C 577.66 352.33 594.18 355.67 610.32 352.18 C 626.35 348.45 642.60 330.75 659.11 330.94 C 675.51 331.12 691.39 348.65 707.74 352.30 C 723.64 356.13 739.87 352.04 756.35 352.46 C 772.22 352.23 796.57 352.07 805.00 352.33" class="components-line" opacity="0.6" />
 
     <!-- Stories Curve -->
-    <path d="M 75.00 224.33 C 83.90 224.67 109.43 224.24 126.94 224.43 C 144.18 223.92 161.68 224.07 179.48 224.12 C 196.25 224.24 213.86 224.61 231.38 224.40 C 248.45 224.01 266.61 224.69 283.74 224.32 C 301.08 224.26 318.57 224.02 335.69 224.42 C 353.19 224.12 370.38 224.52 387.63 224.34 C 405.57 224.52 422.65 224.74 440.12 224.30 C 457.10 224.43 475.07 223.86 492.02 224.38 C 509.76 224.22 527.08 224.61 544.53 224.53 C 562.06 224.26 579.32 224.15 596.54 224.17 C 613.35 224.50 631.13 242.61 648.49 224.40 C 666.30 206.62 683.68 117.91 700.73 117.46 C 718.55 117.63 735.59 206.78 752.82 224.13 C 769.97 242.51 796.67 224.49 805.00 224.33" class="stories-line" />
-    <path d="M 75.00 224.33 C 83.44 223.99 109.58 224.50 126.99 224.40 C 144.66 224.33 161.92 224.49 179.26 224.38 C 196.35 224.54 214.36 224.39 231.60 224.41 C 248.69 224.66 266.08 224.65 283.42 224.22 C 300.97 224.53 318.62 224.46 335.65 224.50 C 353.17 224.00 370.20 224.00 387.69 224.50 C 405.06 224.52 422.88 224.02 439.85 224.25 C 457.67 224.41 474.60 224.26 492.25 224.37 C 509.72 224.68 526.64 224.32 544.22 224.28 C 561.33 224.05 578.73 224.44 596.27 224.44 C 613.46 224.50 631.22 242.01 648.43 224.41 C 665.83 206.32 683.63 117.64 700.70 117.60 C 718.10 117.38 735.25 206.26 752.92 224.26 C 770.19 242.15 796.27 224.20 805.00 224.33" class="stories-line" opacity="0.6" />
+    <path d="M 75.00 224.33 C 83.00 224.17 107.22 224.27 123.52 224.41 C 139.50 224.70 155.71 224.32 172.44 224.50 C 188.23 224.24 204.37 224.52 220.83 224.13 C 237.00 224.07 253.83 223.91 269.46 224.28 C 285.70 224.61 302.02 224.47 318.15 224.17 C 334.97 224.69 351.12 224.30 367.06 224.30 C 383.46 224.02 399.40 224.51 415.71 224.23 C 431.79 224.52 447.65 224.34 464.50 224.43 C 480.59 224.74 497.02 224.27 512.86 224.38 C 529.53 223.86 545.21 224.42 561.79 224.28 C 578.06 224.61 594.61 242.50 610.53 224.30 C 626.83 206.37 643.00 117.34 658.77 117.75 C 675.16 118.17 691.27 206.69 707.84 224.36 C 724.23 242.36 740.15 223.92 756.56 224.32 C 772.67 224.56 796.82 223.92 805.00 224.33" class="stories-line" />
+    <path d="M 75.00 224.33 C 82.92 224.61 107.70 224.44 123.54 224.16 C 139.71 224.50 155.80 224.46 172.40 224.33 C 188.57 224.49 204.73 224.42 220.84 224.43 C 237.53 224.39 253.79 224.48 269.61 224.49 C 285.77 224.65 301.81 224.11 318.34 224.43 C 334.84 224.46 350.64 224.66 367.04 224.17 C 382.95 224.00 399.11 224.67 415.58 224.43 C 432.15 224.02 447.82 224.16 464.48 224.37 C 480.39 224.26 497.00 224.41 513.10 224.51 C 528.96 224.32 545.32 224.22 561.50 224.19 C 577.57 224.44 593.80 242.32 610.16 224.41 C 626.58 206.45 642.49 117.82 658.94 117.55 C 675.52 117.64 691.43 206.41 707.67 224.19 C 723.66 241.82 740.23 224.18 756.31 224.35 C 772.51 224.20 796.73 224.06 805.00 224.33" class="stories-line" opacity="0.6" />
   </g>
 
   <!-- Data Point Markers -->
@@ -118,93 +115,99 @@
     
       <circle cx="75.0" cy="352.3" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="127.1" cy="352.3" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="123.7" cy="352.3" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="179.3" cy="341.7" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="172.3" cy="341.7" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="231.4" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="221.0" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="283.6" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="269.7" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="335.7" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="318.3" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="387.9" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="367.0" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="440.0" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="415.7" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="492.1" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="464.3" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="544.3" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="513.0" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="596.4" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="561.7" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="648.6" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="610.3" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="700.7" cy="320.3" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="659.0" cy="320.3" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="752.9" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="707.7" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+    
+      <circle cx="756.3" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
       <circle cx="805.0" cy="331.0" r="4" fill="var(--total-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
     
       <circle cx="75.0" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="127.1" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="123.7" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="179.3" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="172.3" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="231.4" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="221.0" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="283.6" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="269.7" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="335.7" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="318.3" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="387.9" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="367.0" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="440.0" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="415.7" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="492.1" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="464.3" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="544.3" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="513.0" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="596.4" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="561.7" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="648.6" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="610.3" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="700.7" cy="331.0" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="659.0" cy="331.0" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="752.9" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="707.7" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+    
+      <circle cx="756.3" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
       <circle cx="805.0" cy="352.3" r="4.5" fill="var(--components-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
     
       <circle cx="75.0" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="127.1" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="123.7" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="179.3" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="172.3" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="231.4" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="221.0" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="283.6" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="269.7" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="335.7" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="318.3" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="387.9" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="367.0" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="440.0" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="415.7" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="492.1" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="464.3" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="544.3" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="513.0" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="596.4" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="561.7" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="648.6" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="610.3" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="700.7" cy="117.7" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="659.0" cy="117.7" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
-      <circle cx="752.9" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+      <circle cx="707.7" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
+    
+      <circle cx="756.3" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
       <circle cx="805.0" cy="224.3" r="4.5" fill="var(--stories-color)" stroke="var(--bg-color)" stroke-width="1.5" />
     
@@ -213,7 +216,7 @@
   <!-- Legend Box -->
   <g id="legend" transform="translate(0, 0)">
     <rect x="90" y="87" width="260" height="80" rx="4" fill="var(--legend-bg)" />
-    <path d="M 88.87 87.00 Q 102.02 86.65 115.17 86.68 Q 128.32 87.13 141.47 87.46 Q 154.62 86.72 167.77 86.24 Q 180.92 86.46 194.07 86.30 Q 207.22 86.17 220.37 86.27 Q 233.52 86.45 246.67 86.90 Q 259.82 86.54 272.97 86.43 Q 286.12 86.87 299.26 86.91 Q 312.41 86.74 325.56 86.88 Q 338.71 87.16 351.86 87.00 M 350.00 85.25 Q 350.40 99.09 350.72 112.92 Q 350.93 126.76 350.90 140.60 Q 350.51 154.43 350.00 168.27 M 351.04 167.00 Q 337.90 167.39 324.77 167.69 Q 311.63 167.73 298.50 167.77 Q 285.36 167.55 272.23 167.66 Q 259.09 167.48 245.96 167.05 Q 232.82 167.14 219.69 167.20 Q 206.55 167.48 193.42 167.57 Q 180.28 166.84 167.15 166.43 Q 154.01 166.05 140.88 166.12 Q 127.74 167.07 114.61 167.74 Q 101.47 167.45 88.34 167.00 M 90.00 168.23 Q 90.06 154.40 89.85 140.56 Q 89.93 126.73 89.99 112.90 Q 90.18 99.07 90.00 85.23" class="legend-box" fill="none" />
+    <path d="M 88.35 87.00 Q 101.51 86.56 114.66 86.39 Q 127.82 87.25 140.97 87.88 Q 154.12 87.35 167.28 87.18 Q 180.43 86.77 193.59 86.81 Q 206.74 86.60 219.89 86.52 Q 233.05 86.43 246.20 86.76 Q 259.36 86.82 272.51 86.57 Q 285.66 86.40 298.82 86.31 Q 311.97 86.27 325.13 86.23 Q 338.28 86.78 351.43 87.00 M 350.00 85.03 Q 350.44 98.92 350.84 112.82 Q 350.74 126.71 350.46 140.60 Q 350.06 154.50 350.00 168.39 M 351.74 167.00 Q 338.60 167.45 325.46 167.57 Q 312.32 167.57 299.17 167.34 Q 286.03 167.37 272.89 167.32 Q 259.75 166.88 246.61 166.44 Q 233.47 166.91 220.33 166.95 Q 207.18 166.65 194.04 166.25 Q 180.90 166.11 167.76 166.12 Q 154.62 166.20 141.48 166.23 Q 128.33 166.82 115.19 167.14 Q 102.05 167.28 88.91 167.00 M 90.00 168.46 Q 90.35 154.66 90.89 140.86 Q 90.74 127.06 90.30 113.27 Q 90.05 99.47 90.00 85.67" class="legend-box" fill="none" />
 
     <!-- Stories Legend Item -->
     <rect x="104" y="99" width="14" height="10" rx="2" fill="var(--stories-color)" />
