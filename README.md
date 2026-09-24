@@ -1,10 +1,10 @@
 # Vue 3 + Storybook 10 Demo
 
-[![Storybook](https://archetipo95.github.io/storybook-vue-demo/badges/storybook.svg?v=v1.9.12)](https://archetipo95.github.io/storybook-vue-demo/)
-[![Coverage](https://archetipo95.github.io/storybook-vue-demo/badges/coverage.svg?v=v1.9.12)](https://archetipo95.github.io/storybook-vue-demo/)
-[![Stories](https://archetipo95.github.io/storybook-vue-demo/badges/stories.svg?v=v1.9.12)](https://archetipo95.github.io/storybook-vue-demo/)
-[![Components](https://archetipo95.github.io/storybook-vue-demo/badges/components.svg?v=v1.9.12)](https://archetipo95.github.io/storybook-vue-demo/)
-[![Status](https://archetipo95.github.io/storybook-vue-demo/badges/status.svg?v=v1.9.12)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Storybook](https://archetipo95.github.io/storybook-vue-demo/badges/storybook.svg?v=v1.9.13)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Coverage](https://archetipo95.github.io/storybook-vue-demo/badges/coverage.svg?v=v1.9.13)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Stories](https://archetipo95.github.io/storybook-vue-demo/badges/stories.svg?v=v1.9.13)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Components](https://archetipo95.github.io/storybook-vue-demo/badges/components.svg?v=v1.9.13)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Status](https://archetipo95.github.io/storybook-vue-demo/badges/status.svg?v=v1.9.13)](https://archetipo95.github.io/storybook-vue-demo/)
 [![CI](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/ci.yml)
 [![Deploy Storybook](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/deploy.yml/badge.svg)](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/deploy.yml)
 
@@ -24,7 +24,7 @@ Features:
 
 ## 📈 Component & Story Growth History
 
-[![Storybook Growth History](https://archetipo95.github.io/storybook-vue-demo/stats/history.svg?v=v1.9.12)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Storybook Growth History](https://archetipo95.github.io/storybook-vue-demo/stats/history.svg?v=v1.9.13)](https://archetipo95.github.io/storybook-vue-demo/)
 
 ---
 
