@@ -16,16 +16,16 @@ concurrency:
 jobs:
   deploy:
     name: Build and Deploy Storybook
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: https://archetipo95.github.io/storybook-vue-demo/
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: 'npm'
@@ -37,7 +37,7 @@ jobs:
         run: npm run build-storybook
 
       - name: Checkout Pages branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: gh-pages
           path: pages-repo
@@ -45,7 +45,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish Storybook to GitHub Pages
-        uses: Archetipo95/storybook-github-pages/publisher@v1.9.6
+        uses: Archetipo95/storybook-github-pages/publisher@v1.9.9
         with:
           pages_repo: ${{ github.workspace }}/pages-repo
           pages_branch: gh-pages
