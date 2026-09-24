@@ -82,6 +82,15 @@ This repository uses [`Archetipo95/storybook-github-pages`](https://github.com/A
     generate_stats_graph: "true"
 ```
 
+### 🐤 Action Canary (pre-release validation)
+
+The **Action Canary** workflow (`.github/workflows/action-canary.yml`) is a manual
+(`workflow_dispatch`) check used before releasing the action. It builds this demo's
+Storybook, checks out `Archetipo95/storybook-github-pages` at the ref you pass via the
+`action_ref` input (default `main`), and runs the composite action against
+`storybook-static` with `publish: false`, so badges, stats and artifact validation are
+exercised without deploying to GitHub Pages.
+
 ---
 
 ## 📄 License
