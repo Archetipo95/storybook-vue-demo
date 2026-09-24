@@ -60,3 +60,18 @@ export const InteractiveTyping: Story = {
     await expect(input).toHaveValue('Storybook Pages')
   }
 }
+
+export const EmailInputTyping: Story = {
+  args: {
+    type: 'email',
+    label: 'Notification Email',
+    placeholder: 'you@example.com',
+    helperText: 'Used for release and preview notifications.'
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const input = canvas.getByRole('textbox')
+    await userEvent.type(input, 'demo@example.com')
+    await expect(input).toHaveValue('demo@example.com')
+  }
+}
