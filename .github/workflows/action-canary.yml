@@ -1,0 +1,70 @@
+name: Action Canary
+
+# Manual pre-release canary: builds this demo Storybook, then runs the
+# storybook-github-pages composite action from a candidate ref against the
+# built output with publishing disabled. Nothing is deployed to Pages.
+
+on:
+  workflow_dispatch:
+    inputs:
+      action_ref:
+        description: 'Ref of Archetipo95/storybook-github-pages to validate (branch, tag or SHA). Defaults to main, the unreleased candidate.'
+        required: false
+        default: 'main'
+
+concurrency:
+  group: action-canary-${{ github.ref }}-${{ inputs.action_ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  canary:
+    name: Validate ${{ inputs.action_ref }} against built Storybook
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout demo repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Storybook
+        run: npm run build-storybook
+
+      - name: Checkout candidate action ref
+        uses: actions/checkout@v4
+        with:
+          repository: Archetipo95/storybook-github-pages
+          ref: ${{ inputs.action_ref }}
+          path: .action-canary
+          persist-credentials: false
+
+      - name: Run candidate action (publish disabled)
+        uses: ./.action-canary
+        with:
+          checkout: 'false'
+          path: 'storybook-static'
+          publish: 'false'
+          create_deployment: 'false'
+          generate_badges: 'true'
+          generate_stats_graph: 'true'
+          site_url: 'https://archetipo95.github.io/storybook-vue-demo/'
+
+      - name: Assert canary artifacts
+        run: |
+          set -euo pipefail
+          test -f storybook-static/index.html
+          test -f storybook-static/.nojekyll
+          test -f storybook-static/badges/storybook.svg
+          test -f storybook-static/stats/history.svg
+          echo "Canary passed for ref: ${{ inputs.action_ref }}"
