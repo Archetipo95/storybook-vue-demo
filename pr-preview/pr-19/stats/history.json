@@ -1,0 +1,251 @@
+[
+  {
+    "timestamp": "2026-09-13T19:07:48.140Z",
+    "date": "2026-09-13",
+    "commit": "a41113d",
+    "version": "v10.6.0",
+    "components": 4,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-13T19:08:58.043Z",
+    "date": "2026-09-13",
+    "commit": "ec48bcf",
+    "version": "v10.6.0",
+    "components": 4,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-13T19:11:54.035Z",
+    "date": "2026-09-13",
+    "commit": "ec48bcf",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 5,
+    "coveragePercent": 80,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-13T19:21:22.077Z",
+    "date": "2026-09-13",
+    "commit": "3b36b6c",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-13T19:55:03.719Z",
+    "date": "2026-09-13",
+    "commit": "46be594",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-13T19:57:40.403Z",
+    "date": "2026-09-13",
+    "commit": "b2a3369",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-14T06:50:55.131Z",
+    "date": "2026-09-14",
+    "commit": "983c581",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-15T08:40:03.263Z",
+    "date": "2026-09-15",
+    "commit": "97fe57c",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-15T10:33:49.696Z",
+    "date": "2026-09-15",
+    "commit": "d602d9d",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-15T10:43:52.965Z",
+    "date": "2026-09-15",
+    "commit": "3b461ee",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-15T11:12:11.942Z",
+    "date": "2026-09-15",
+    "commit": "0353986",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-15T11:20:48.798Z",
+    "date": "2026-09-15",
+    "commit": "7d4d7c4",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-22T07:12:08.760Z",
+    "date": "2026-09-22",
+    "commit": "07fb384",
+    "version": "v10.6.0",
+    "components": 6,
+    "totalComponents": 7,
+    "coveragePercent": 86,
+    "stories": 26,
+    "docs": 6
+  },
+  {
+    "timestamp": "2026-09-22T08:00:32.071Z",
+    "date": "2026-09-22",
+    "commit": "14ea197",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-22T08:14:57.194Z",
+    "date": "2026-09-22",
+    "commit": "197d959",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-23T07:12:57.056Z",
+    "date": "2026-09-23",
+    "commit": "23b527d",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-23T07:29:47.814Z",
+    "date": "2026-09-23",
+    "commit": "617a032",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-24T14:27:39.862Z",
+    "date": "2026-09-24",
+    "commit": "4b568cf",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-24T14:34:49.139Z",
+    "date": "2026-09-24",
+    "commit": "aedc4cf",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-24T14:41:53.931Z",
+    "date": "2026-09-24",
+    "commit": "a6605d8",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-24T14:56:47.433Z",
+    "date": "2026-09-24",
+    "commit": "e6497c2",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-24T15:00:42.217Z",
+    "date": "2026-09-24",
+    "commit": "952a158",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-24T15:10:44.094Z",
+    "date": "2026-09-24",
+    "commit": "597992e",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 16,
+    "docs": 4
+  }
+]
