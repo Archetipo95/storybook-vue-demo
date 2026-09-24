@@ -128,17 +128,6 @@
     "docs": 4
   },
   {
-    "timestamp": "2026-09-22T07:12:08.760Z",
-    "date": "2026-09-22",
-    "commit": "07fb384",
-    "version": "v10.6.0",
-    "components": 6,
-    "totalComponents": 7,
-    "coveragePercent": 86,
-    "stories": 26,
-    "docs": 6
-  },
-  {
     "timestamp": "2026-09-22T08:00:32.071Z",
     "date": "2026-09-22",
     "commit": "14ea197",
@@ -249,14 +238,47 @@
     "docs": 4
   },
   {
-    "timestamp": "2026-09-24T15:43:41.366Z",
+    "timestamp": "2026-09-24T15:49:28.981Z",
     "date": "2026-09-24",
-    "commit": "10cac82",
+    "commit": "31ceb9c",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 17,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-24T15:54:22.058Z",
+    "date": "2026-09-24",
+    "commit": "67b1216",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 17,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-24T16:03:07.953Z",
+    "date": "2026-09-24",
+    "commit": "11cae56",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 17,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-09-24T16:04:50.179Z",
+    "date": "2026-09-24",
+    "commit": "614bcd5",
     "version": "v10.6.0",
     "components": 6,
     "totalComponents": 7,
     "coveragePercent": 86,
-    "stories": 26,
+    "stories": 27,
     "docs": 6
   }
 ]
