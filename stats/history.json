@@ -128,17 +128,6 @@
     "docs": 4
   },
   {
-    "timestamp": "2026-09-22T07:12:08.760Z",
-    "date": "2026-09-22",
-    "commit": "07fb384",
-    "version": "v10.6.0",
-    "components": 6,
-    "totalComponents": 7,
-    "coveragePercent": 86,
-    "stories": 26,
-    "docs": 6
-  },
-  {
     "timestamp": "2026-09-22T08:00:32.071Z",
     "date": "2026-09-22",
     "commit": "14ea197",
