@@ -304,8 +304,19 @@
     "docs": 4
   },
   {
-    "timestamp": "2026-09-24T16:27:05.487Z",
-    "date": "2026-09-24",
+    "timestamp": "2026-10-10T07:59:32.530Z",
+    "date": "2026-10-10",
+    "commit": "a4b72b8",
+    "version": "v10.6.0",
+    "components": 4,
+    "totalComponents": 6,
+    "coveragePercent": 67,
+    "stories": 17,
+    "docs": 4
+  },
+  {
+    "timestamp": "2026-10-10T08:01:00.458Z",
+    "date": "2026-10-10",
     "commit": "c5d9e70",
     "version": "v10.6.0",
     "components": 6,

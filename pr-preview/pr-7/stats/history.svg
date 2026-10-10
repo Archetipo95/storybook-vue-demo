@@ -82,7 +82,7 @@
       <text x="561.7" y="419.0" class="label-text" text-anchor="middle">2026-09-13</text>
     
       <path d="M 805.00 394.18 Q 804.65 396.07 804.67 397.97 Q 804.74 399.87 805.00 401.76" class="axis" />
-      <text x="805.0" y="419.0" class="label-text" text-anchor="middle">2026-09-24</text>
+      <text x="805.0" y="419.0" class="label-text" text-anchor="middle">2026-10-10</text>
     
     <text x="440.0" y="446" class="axis-label">Date</text>
   </g>
@@ -141,6 +141,6 @@
 
   <!-- Footer / Watermark -->
   <g id="watermark">
-    <text x="830" y="446" class="watermark">storybook-github-pages</text>
+    <text x="830" y="446" class="watermark">storybook-github-swiss-knife</text>
   </g>
 </svg>
