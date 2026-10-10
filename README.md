@@ -19,6 +19,7 @@ Features:
 - 📈 **Hand-Drawn Growth Chart**: Vintage Star-History style growth history tracking component coverage, stories, and components over time.
 - 🚀 **Automated GitHub Pages Deployment**: Fully automated deployment via `Archetipo95/storybook-github-swiss-knife` with zero runtime dependencies.
 - 🔍 **Rich PR Previews**: Isolated Storybook previews generated for pull requests with live badges, base vs preview coverage delta comparison tables, collapsible growth charts, and automatic cleanup.
+- 👁️ **Visual Regression & Accessibility**: Every story is screenshotted and scanned with axe on each pull request and compared with `main`; the `swiss-knife / visual` and `swiss-knife / accessibility` checks report the result.
 
 ---
 
@@ -88,6 +89,21 @@ This repository uses [`Archetipo95/storybook-github-swiss-knife`](https://github
 
 PR previews use the `pr-preview-build`, `pr-preview-publish`, `pr-preview-cleanup` and
 `pr-preview-janitor` workflows from the same repository.
+
+### 👁️ Visual regression and accessibility
+
+`visual.yml` screenshots every story (running its play function) and scans it with axe; pushes
+to `main` refresh the baselines. The trusted `visual-gate.yml` then posts two checks on the pull
+request:
+
+- **`swiss-knife / visual`** fails on changed or removed screenshots until the
+  `visual-approved` label is added. Interaction failures always fail.
+- **`swiss-knife / accessibility`** fails on new critical or serious axe violations. Known
+  violations are recorded in `.storybook/a11y-baseline.json`.
+
+The report is published next to the PR preview, under `pr-preview/pr-<N>/visual/`. Settings
+live in `.storybook/swiss-knife.json`; changes to it or to `visual.yml` must land in their own
+pull request.
 
 ### 🐤 Action Canary (pre-release validation)
 

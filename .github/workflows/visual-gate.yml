@@ -1,0 +1,26 @@
+name: Visual Gate
+
+on:
+  workflow_run:
+    workflows: ['Visual']
+    types: [completed]
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    if: github.event.workflow_run.event == 'pull_request'
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/visual-gate.yml@239a07b3dbd31f0b4e59f89fa92e96898e7b6ecf # v0.1.0
+    permissions:
+      actions: read
+      checks: write
+      contents: write
+      issues: write
+      pull-requests: write
+    with:
+      caller_workflow: .github/workflows/visual.yml
+      # The capture settings are read from the pull request: keep them as reviewed on the base.
+      protected_paths: '.storybook/swiss-knife.json'
+    secrets:
+      passcode_hash: ${{ secrets.STORYBOOK_PREVIEW_PASSCODE_HASH }}
