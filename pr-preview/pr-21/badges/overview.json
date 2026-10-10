@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "status": "published • caec995",
+  "build": "passed • caec995",
+  "commit": "caec995",
+  "storybookVersion": "v10.6.0",
+  "storiesCount": 27,
+  "componentsCount": 6,
+  "totalComponents": 7,
+  "coveragePercent": 86,
+  "docsCount": 6,
+  "hasStoriesData": true,
+  "tests": null,
+  "generatedAt": "2026-10-10T08:20:24.768Z"
+}
