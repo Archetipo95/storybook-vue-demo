@@ -1,0 +1,23 @@
+{
+  "enforcedRules": [],
+  "stories": {
+    "components-avatar--with-status": {
+      "aria-prohibited-attr": 1
+    },
+    "components-button--danger": {
+      "color-contrast": 1
+    },
+    "components-button--interactive-click": {
+      "color-contrast": 1
+    },
+    "components-button--primary": {
+      "color-contrast": 1
+    },
+    "components-card--elevated": {
+      "color-contrast": 1
+    },
+    "components-input--with-error": {
+      "color-contrast": 1
+    }
+  }
+}
