@@ -34,3 +34,7 @@ jobs:
           pages_repo: ${{ github.workspace }}/pages-repo
           pages_branch: gh-pages
           preview_root: pr-preview
+          # No age-based pruning: PR #22 stays open as the visual regression showcase, and its
+          # preview must not expire. Previews of closed PRs are still removed.
+          retention_days: '0'
+          warning_days_before_cleanup: '0'
