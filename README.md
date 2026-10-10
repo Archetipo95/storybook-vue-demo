@@ -78,7 +78,7 @@ This repository uses [`Archetipo95/storybook-github-swiss-knife`](https://github
 
 ```yaml
 - name: Publish Storybook to GitHub Pages
-  uses: Archetipo95/storybook-github-swiss-knife/actions/publisher@a09f091428fba8720e5fc5330590b5960414c3c0 # v0.1.1
+  uses: Archetipo95/storybook-github-swiss-knife/actions/publisher@0699ab9fa18ab6de13c926afb7cbc210a0a2a0a5 # v0.2.1
   with:
     pages_repo: ${{ github.workspace }}/pages-repo
     pages_branch: gh-pages
