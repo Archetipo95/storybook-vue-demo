@@ -4,7 +4,8 @@
     "baselineBranches": [
       "main"
     ],
-    "approvalLabel": "visual-approved"
+    "approvalLabel": "visual-approved",
+    "threshold": 0.1
   },
   "a11y": {
     "blockingImpacts": [
