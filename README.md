@@ -92,6 +92,11 @@ PR previews use the `pr-preview-build`, `pr-preview-publish`, `pr-preview-cleanu
 
 ### 👁️ Visual regression and accessibility
 
+> **Live example:** [PR #22](https://github.com/Archetipo95/storybook-vue-demo/pull/22) stays open as a showcase: a
+> new `Switch` component and a restyled `Badge`. Its checks, report and
+> [preview](https://archetipo95.github.io/storybook-vue-demo/pr-preview/pr-22/) show what a pull request with visual
+> changes looks like.
+
 `visual.yml` screenshots every story (running its play function) and scans it with axe; pushes
 to `main` refresh the baselines. The trusted `visual-gate.yml` then posts two checks on the pull
 request:
