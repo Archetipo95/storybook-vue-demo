@@ -101,7 +101,10 @@ request:
 - **`swiss-knife / accessibility`** fails on new critical or serious axe violations. Known
   violations are recorded in `.storybook/a11y-baseline.json`.
 
-The report is published next to the PR preview, under `pr-preview/pr-<N>/visual/`. Settings
+The report is published next to the PR preview, under `pr-preview/pr-<N>/visual/`. The
+`storybook-swiss-knife` addon (registered in `.storybook/main.ts`, installed from the v0.1.1
+release tarball until it is on npm) shows it inside the preview: a **Visual** panel with the base
+and PR screenshots of each story, and **New** / **Modified** statuses in the sidebar. Settings
 live in `.storybook/swiss-knife.json`; changes to it or to `visual.yml` must land in their own
 pull request.
 
