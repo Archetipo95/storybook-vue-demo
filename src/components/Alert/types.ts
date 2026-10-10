@@ -1,5 +1,12 @@
+export type AlertVariant = 'info' | 'success' | 'warning' | 'danger'
+
 export interface AlertProps {
-  variant?: 'info' | 'success' | 'warning' | 'danger'
+  variant?: AlertVariant
   title?: string
   dismissible?: boolean
 }
+
+export interface AlertEmits {
+  (e: 'dismiss'): void
+}
+

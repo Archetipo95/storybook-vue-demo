@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { AlertProps } from './types'
+import type { AlertProps, AlertEmits } from './types'
 
 withDefaults(defineProps<AlertProps>(), {
   variant: 'info',
@@ -8,32 +8,51 @@ withDefaults(defineProps<AlertProps>(), {
   dismissible: false
 })
 
-const emit = defineEmits<{
-  (e: 'dismiss'): void
-}>()
+const emit = defineEmits<AlertEmits>()
+const isDismissed = ref(false)
 
-const isVisible = ref(true)
-
-const dismiss = () => {
-  isVisible.value = false
+function dismiss() {
+  isDismissed.value = true
   emit('dismiss')
 }
 </script>
 
 <template>
-  <div v-if="isVisible" :class="['alert', `alert--${variant}`]" role="alert">
+  <div
+    v-if="!isDismissed"
+    :class="['alert', `alert--${variant}`]"
+    role="alert"
+    aria-live="polite"
+  >
     <div class="alert__icon" aria-hidden="true">
-      <span v-if="variant === 'success'">✓</span>
-      <span v-else-if="variant === 'warning'">⚠️</span>
-      <span v-else-if="variant === 'danger'">✕</span>
-      <span v-else>ℹ</span>
+      <svg v-if="variant === 'info'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10" />
+        <line x1="12" y1="16" x2="12" y2="12" />
+        <line x1="12" y1="8" x2="12.01" y2="8" />
+      </svg>
+      <svg v-else-if="variant === 'success'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+        <polyline points="22 4 12 14.01 9 11.01" />
+      </svg>
+      <svg v-else-if="variant === 'warning'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+        <line x1="12" y1="9" x2="12" y2="13" />
+        <line x1="12" y1="17" x2="12.01" y2="17" />
+      </svg>
+      <svg v-else-if="variant === 'danger'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10" />
+        <line x1="15" y1="9" x2="9" y2="15" />
+        <line x1="9" y1="9" x2="15" y2="15" />
+      </svg>
     </div>
+
     <div class="alert__content">
-      <h4 v-if="title" class="alert__title">{{ title }}</h4>
+      <strong v-if="title" class="alert__title">{{ title }}</strong>
       <div class="alert__message">
         <slot />
       </div>
     </div>
+
     <button
       v-if="dismissible"
       type="button"
@@ -41,7 +60,10 @@ const dismiss = () => {
       aria-label="Dismiss alert"
       @click="dismiss"
     >
-      &times;
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
     </button>
   </div>
 </template>
@@ -51,7 +73,7 @@ const dismiss = () => {
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
-  padding: 0.875rem 1rem;
+  padding: 1rem 1.25rem;
   border-radius: var(--radius-md);
   border: 1px solid transparent;
   font-family: inherit;
@@ -60,21 +82,21 @@ const dismiss = () => {
 }
 
 .alert__icon {
-  font-size: 1.125rem;
-  line-height: 1;
   flex-shrink: 0;
-  margin-top: 0.1rem;
+  display: flex;
+  align-items: center;
+  margin-top: 0.125rem;
 }
 
 .alert__content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .alert__title {
-  margin: 0 0 0.25rem;
-  font-size: 0.875rem;
   font-weight: 600;
-  color: inherit;
 }
 
 .alert__message {
@@ -82,15 +104,18 @@ const dismiss = () => {
 }
 
 .alert__dismiss {
-  background: none;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
   border: none;
-  font-size: 1.25rem;
-  line-height: 1;
   cursor: pointer;
-  padding: 0;
-  color: currentColor;
+  padding: 0.25rem;
+  border-radius: var(--radius-sm);
+  color: inherit;
   opacity: 0.7;
-  transition: opacity 0.15s ease;
+  transition: opacity var(--transition-fast);
 }
 
 .alert__dismiss:hover {
@@ -99,26 +124,26 @@ const dismiss = () => {
 
 /* Variants */
 .alert--info {
-  background-color: #eff6ff;
-  border-color: #bfdbfe;
-  color: #1e40af;
+  background-color: #f0f9ff;
+  border-color: #bae6fd;
+  color: #0369a1;
 }
 
 .alert--success {
   background-color: #f0fdf4;
   border-color: #bbf7d0;
-  color: #166534;
+  color: #15803d;
 }
 
 .alert--warning {
   background-color: #fffbeb;
   border-color: #fde68a;
-  color: #92400e;
+  color: #b45309;
 }
 
 .alert--danger {
   background-color: #fef2f2;
   border-color: #fecaca;
-  color: #991b1b;
+  color: #b91c1c;
 }
 </style>
