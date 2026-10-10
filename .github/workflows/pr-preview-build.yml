@@ -37,7 +37,7 @@ jobs:
         run: npm run build-storybook
 
       - name: Package and upload preview bundle
-        uses: Archetipo95/storybook-github-swiss-knife/actions/preview-build@a09f091428fba8720e5fc5330590b5960414c3c0 # v0.1.1
+        uses: Archetipo95/storybook-github-swiss-knife/actions/preview-build@0699ab9fa18ab6de13c926afb7cbc210a0a2a0a5 # v0.2.1
         with:
           source_path: 'storybook-static'
           generate_badges: 'true'
