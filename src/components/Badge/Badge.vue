@@ -21,8 +21,10 @@ withDefaults(defineProps<BadgeProps>(), {
   align-items: center;
   gap: 0.375rem;
   font-family: inherit;
-  font-weight: 500;
-  border-radius: var(--radius-full);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-sm);
+  box-shadow: inset 0 0 0 1px rgb(15 23 42 / 0.08);
   line-height: 1;
   white-space: nowrap;
 }

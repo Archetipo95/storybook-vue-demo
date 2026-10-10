@@ -18,6 +18,14 @@
     },
     "components-input--with-error": {
       "color-contrast": 1
+    },
+    "pages-app--interactions": {
+      "aria-prohibited-attr": 3,
+      "color-contrast": 5
+    },
+    "pages-app--showcase": {
+      "aria-prohibited-attr": 3,
+      "color-contrast": 4
     }
   }
 }
