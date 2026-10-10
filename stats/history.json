@@ -368,5 +368,16 @@
     "coveragePercent": 86,
     "stories": 27,
     "docs": 6
+  },
+  {
+    "timestamp": "2026-10-10T15:53:39.168Z",
+    "date": "2026-10-10",
+    "commit": "9499227",
+    "version": "v10.6.0",
+    "components": 6,
+    "totalComponents": 7,
+    "coveragePercent": 86,
+    "stories": 27,
+    "docs": 6
   }
 ]
