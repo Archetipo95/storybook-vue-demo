@@ -102,9 +102,11 @@ request:
   violations are recorded in `.storybook/a11y-baseline.json`.
 
 The report is published next to the PR preview, under `pr-preview/pr-<N>/visual/`. The
-`storybook-swiss-knife` addon (registered in `.storybook/main.ts`, installed from the v0.1.1
+`storybook-swiss-knife` addon (registered in `.storybook/main.ts`, installed from the v0.2.0
 release tarball until it is on npm) shows it inside the preview: a **Visual** panel with the base
-and PR screenshots of each story, and **New** / **Modified** statuses in the sidebar. Settings
+and PR screenshots of each story (**Show changed pixels** stays on across stories), **New** /
+**Modified** statuses in Storybook's sidebar filter, and a `visual:failed` tag for interaction or
+render failures. Settings
 live in `.storybook/swiss-knife.json`; changes to it or to `visual.yml` must land in their own
 pull request.
 
