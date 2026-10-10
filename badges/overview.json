@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "status": "published • a4b72b8",
-  "build": "passed • a4b72b8",
-  "commit": "a4b72b8",
+  "status": "published • b997c92",
+  "build": "passed • b997c92",
+  "commit": "b997c92",
   "storybookVersion": "v10.6.0",
-  "storiesCount": 17,
-  "componentsCount": 4,
-  "totalComponents": 6,
-  "coveragePercent": 67,
-  "docsCount": 4,
+  "storiesCount": 27,
+  "componentsCount": 6,
+  "totalComponents": 7,
+  "coveragePercent": 86,
+  "docsCount": 6,
   "hasStoriesData": true,
   "tests": null,
-  "generatedAt": "2026-10-10T07:59:32.471Z"
+  "generatedAt": "2026-10-10T08:16:25.741Z"
 }
