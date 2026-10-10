@@ -27,7 +27,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 24
           cache: 'npm'
 
       - name: Install dependencies
@@ -37,7 +37,7 @@ jobs:
         run: npm run build-storybook
 
       - name: Package and upload preview bundle
-        uses: Archetipo95/storybook-github-pages/preview-build@v1.9.13
+        uses: Archetipo95/storybook-github-swiss-knife/actions/preview-build@239a07b3dbd31f0b4e59f89fa92e96898e7b6ecf # v0.1.0
         with:
           source_path: 'storybook-static'
           generate_badges: 'true'

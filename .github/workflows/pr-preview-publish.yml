@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   publish:
-    uses: Archetipo95/storybook-github-pages/.github/workflows/pr-preview-publish.yml@v1.9.13
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/pr-preview-publish.yml@239a07b3dbd31f0b4e59f89fa92e96898e7b6ecf # v0.1.0
     with:
       workflow_run_id: ${{ github.event.workflow_run.id }}
     secrets: inherit

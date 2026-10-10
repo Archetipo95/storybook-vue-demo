@@ -1,14 +1,14 @@
 # Vue 3 + Storybook 10 Demo
 
-[![Storybook](https://archetipo95.github.io/storybook-vue-demo/badges/storybook.svg?v=v1.9.13)](https://archetipo95.github.io/storybook-vue-demo/)
-[![Coverage](https://archetipo95.github.io/storybook-vue-demo/badges/coverage.svg?v=v1.9.13)](https://archetipo95.github.io/storybook-vue-demo/)
-[![Stories](https://archetipo95.github.io/storybook-vue-demo/badges/stories.svg?v=v1.9.13)](https://archetipo95.github.io/storybook-vue-demo/)
-[![Components](https://archetipo95.github.io/storybook-vue-demo/badges/components.svg?v=v1.9.13)](https://archetipo95.github.io/storybook-vue-demo/)
-[![Status](https://archetipo95.github.io/storybook-vue-demo/badges/status.svg?v=v1.9.13)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Storybook](https://archetipo95.github.io/storybook-vue-demo/badges/storybook.svg?v=v0.1.0)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Coverage](https://archetipo95.github.io/storybook-vue-demo/badges/coverage.svg?v=v0.1.0)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Stories](https://archetipo95.github.io/storybook-vue-demo/badges/stories.svg?v=v0.1.0)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Components](https://archetipo95.github.io/storybook-vue-demo/badges/components.svg?v=v0.1.0)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Status](https://archetipo95.github.io/storybook-vue-demo/badges/status.svg?v=v0.1.0)](https://archetipo95.github.io/storybook-vue-demo/)
 [![CI](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/ci.yml)
 [![Deploy Storybook](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/deploy.yml/badge.svg)](https://github.com/Archetipo95/storybook-vue-demo/actions/workflows/deploy.yml)
 
-A minimal, production-grade test and demo repository for [Security-Hardened Storybook to GitHub Pages](https://github.com/Archetipo95/storybook-github-pages).
+A minimal, production-grade test and demo repository for [storybook-github-swiss-knife](https://github.com/Archetipo95/storybook-github-swiss-knife).
 
 🚀 **Live Storybook:** [https://archetipo95.github.io/storybook-vue-demo/](https://archetipo95.github.io/storybook-vue-demo/)
 
@@ -17,14 +17,14 @@ Features:
 - 📚 **Storybook 10**: Autodocs, interactive play functions (`storybook/test`), and accessibility checks (`@storybook/addon-a11y`).
 - 🛡️ **Dynamic Badges & Status**: Real-time component coverage %, story count, component count, and state-aware deployment status (`published`, `building`, `failed`).
 - 📈 **Hand-Drawn Growth Chart**: Vintage Star-History style growth history tracking component coverage, stories, and components over time.
-- 🚀 **Automated GitHub Pages Deployment**: Fully automated deployment via `Archetipo95/storybook-github-pages@v1` with zero runtime dependencies.
+- 🚀 **Automated GitHub Pages Deployment**: Fully automated deployment via `Archetipo95/storybook-github-swiss-knife` with zero runtime dependencies.
 - 🔍 **Rich PR Previews**: Isolated Storybook previews generated for pull requests with live badges, base vs preview coverage delta comparison tables, collapsible growth charts, and automatic cleanup.
 
 ---
 
 ## 📈 Component & Story Growth History
 
-[![Storybook Growth History](https://archetipo95.github.io/storybook-vue-demo/stats/history.svg?v=v1.9.13)](https://archetipo95.github.io/storybook-vue-demo/)
+[![Storybook Growth History](https://archetipo95.github.io/storybook-vue-demo/stats/history.svg?v=v0.1.0)](https://archetipo95.github.io/storybook-vue-demo/)
 
 ---
 
@@ -71,22 +71,28 @@ npm run build-storybook
 
 ## 🚢 Deployment Architecture
 
-This repository uses [`Archetipo95/storybook-github-pages`](https://github.com/Archetipo95/storybook-github-pages):
+This repository uses [`Archetipo95/storybook-github-swiss-knife`](https://github.com/Archetipo95/storybook-github-swiss-knife).
+`deploy.yml` builds Storybook and publishes it to the `gh-pages` branch, next to the PR previews:
 
 ```yaml
-- name: Deploy Storybook to GitHub Pages
-  uses: Archetipo95/storybook-github-pages@v1
+- name: Publish Storybook to GitHub Pages
+  uses: Archetipo95/storybook-github-swiss-knife/actions/publisher@239a07b3dbd31f0b4e59f89fa92e96898e7b6ecf # v0.1.0
   with:
-    path: "storybook-static"
-    generate_badges: "true"
-    generate_stats_graph: "true"
+    pages_repo: ${{ github.workspace }}/pages-repo
+    pages_branch: gh-pages
+    source_directory: ${{ github.workspace }}/storybook-static
+    managed_directories: pr-preview
+    site_url: https://archetipo95.github.io/storybook-vue-demo/
 ```
+
+PR previews use the `pr-preview-build`, `pr-preview-publish`, `pr-preview-cleanup` and
+`pr-preview-janitor` workflows from the same repository.
 
 ### 🐤 Action Canary (pre-release validation)
 
 The **Action Canary** workflow (`.github/workflows/action-canary.yml`) is a manual
 (`workflow_dispatch`) check used before releasing the action. It builds this demo's
-Storybook, checks out `Archetipo95/storybook-github-pages` at the ref you pass via the
+Storybook, checks out `Archetipo95/storybook-github-swiss-knife` at the ref you pass via the
 `action_ref` input (default `main`), and runs the composite action against
 `storybook-static` with `publish: false`, so badges, stats and artifact validation are
 exercised without deploying to GitHub Pages.

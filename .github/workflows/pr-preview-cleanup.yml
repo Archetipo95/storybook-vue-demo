@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   cleanup:
-    uses: Archetipo95/storybook-github-pages/.github/workflows/pr-preview-cleanup.yml@v1.9.13
+    uses: Archetipo95/storybook-github-swiss-knife/.github/workflows/pr-preview-cleanup.yml@239a07b3dbd31f0b4e59f89fa92e96898e7b6ecf # v0.1.0
     with:
       pr_number: ${{ github.event.pull_request.number }}
     secrets: inherit
