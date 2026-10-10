@@ -18,6 +18,7 @@ jobs:
     concurrency:
       group: storybook-pages-${{ github.repository }}
       cancel-in-progress: false
+      queue: max
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout Pages branch
@@ -28,7 +29,7 @@ jobs:
           fetch-depth: 0
 
       - name: Prune stale preview directories
-        uses: Archetipo95/storybook-github-pages/preview-janitor@1a922a815952feaeb895f65b7f5dbf673c2fd204 # v1.9.0
+        uses: Archetipo95/storybook-github-swiss-knife/actions/preview-janitor@239a07b3dbd31f0b4e59f89fa92e96898e7b6ecf # v0.1.0
         with:
           pages_repo: ${{ github.workspace }}/pages-repo
           pages_branch: gh-pages

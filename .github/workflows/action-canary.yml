@@ -1,14 +1,14 @@
 name: Action Canary
 
 # Manual pre-release canary: builds this demo Storybook, then runs the
-# storybook-github-pages composite action from a candidate ref against the
+# storybook-github-swiss-knife composite action from a candidate ref against the
 # built output with publishing disabled. Nothing is deployed to Pages.
 
 on:
   workflow_dispatch:
     inputs:
       action_ref:
-        description: 'Ref of Archetipo95/storybook-github-pages to validate (branch, tag or SHA). Defaults to main, the unreleased candidate.'
+        description: 'Ref of Archetipo95/storybook-github-swiss-knife to validate (branch, tag or SHA). Defaults to main, the unreleased candidate.'
         required: false
         default: 'main'
 
@@ -32,7 +32,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 24
           cache: 'npm'
 
       - name: Install dependencies
@@ -44,7 +44,7 @@ jobs:
       - name: Checkout candidate action ref
         uses: actions/checkout@v7
         with:
-          repository: Archetipo95/storybook-github-pages
+          repository: Archetipo95/storybook-github-swiss-knife
           ref: ${{ inputs.action_ref }}
           path: .action-canary
           persist-credentials: false
