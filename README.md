@@ -79,7 +79,7 @@ This repository uses [`Archetipo95/storybook-github-swiss-knife`](https://github
 
 ```yaml
 - name: Publish Storybook to GitHub Pages
-  uses: Archetipo95/storybook-github-swiss-knife/actions/publisher@2dd057deb6ffd4a589ec7e3fe3ee7f782eb02f69 # v0.5.0
+  uses: Archetipo95/storybook-github-swiss-knife/actions/publisher@35163cb036779f508d2f2bc9ebe775805d15c672 # v0.5.1
   with:
     pages_repo: ${{ github.workspace }}/pages-repo
     pages_branch: gh-pages
@@ -108,7 +108,7 @@ request:
   violations are recorded in `.storybook/a11y-baseline.json`.
 
 The report is published next to the PR preview, under `pr-preview/pr-<N>/visual/`. The
-`storybook-swiss-knife` addon (registered in `.storybook/main.ts`, installed from the v0.5.0
+`storybook-swiss-knife` addon (registered in `.storybook/main.ts`, installed from the v0.5.1
 release tarball until it is on npm) shows it inside the preview: a **Visual** panel with the base
 and PR screenshots of each story (**Show changed pixels** stays on across stories), **New** /
 **Modified** statuses in Storybook's sidebar filter, and a `visual:failed` tag for interaction or
