@@ -436,9 +436,20 @@
     "docs": 6
   },
   {
-    "timestamp": "2026-10-11T09:01:49.205Z",
+    "timestamp": "2026-10-11T11:09:47.062Z",
     "date": "2026-10-11",
-    "commit": "1580dfd",
+    "commit": "7f02e76",
+    "version": "v10.6.0",
+    "components": 6,
+    "totalComponents": 7,
+    "coveragePercent": 86,
+    "stories": 27,
+    "docs": 6
+  },
+  {
+    "timestamp": "2026-10-11T11:10:12.957Z",
+    "date": "2026-10-11",
+    "commit": "61c5501",
     "version": "v10.6.0",
     "components": 8,
     "totalComponents": 8,
