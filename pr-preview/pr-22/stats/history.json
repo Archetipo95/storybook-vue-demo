@@ -458,9 +458,20 @@
     "docs": 6
   },
   {
-    "timestamp": "2026-10-11T16:01:27.580Z",
-    "date": "2026-10-11",
-    "commit": "643aaf5",
+    "timestamp": "2026-10-12T09:35:50.497Z",
+    "date": "2026-10-12",
+    "commit": "cafbc57",
+    "version": "v10.6.0",
+    "components": 6,
+    "totalComponents": 7,
+    "coveragePercent": 86,
+    "stories": 27,
+    "docs": 6
+  },
+  {
+    "timestamp": "2026-10-12T09:37:52.261Z",
+    "date": "2026-10-12",
+    "commit": "b536bf9",
     "version": "v10.6.0",
     "components": 8,
     "totalComponents": 8,
