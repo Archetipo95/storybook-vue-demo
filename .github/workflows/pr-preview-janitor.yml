@@ -29,7 +29,7 @@ jobs:
           fetch-depth: 0
 
       - name: Prune stale preview directories
-        uses: Archetipo95/storybook-github-swiss-knife/actions/preview-janitor@865c74796c72dec7d9961249106ac9756af5f3c8 # v0.6.0
+        uses: Archetipo95/storybook-github-swiss-knife/actions/preview-janitor@0be244892b6c2ac5e3bab2a96a309c663ce170df # v0.6.1
         with:
           pages_repo: ${{ github.workspace }}/pages-repo
           pages_branch: gh-pages
