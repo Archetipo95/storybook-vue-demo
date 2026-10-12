@@ -47,7 +47,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish Storybook to GitHub Pages
-        uses: Archetipo95/storybook-github-swiss-knife/actions/publisher@0be244892b6c2ac5e3bab2a96a309c663ce170df # v0.6.1
+        uses: Archetipo95/storybook-github-swiss-knife/actions/publisher@dd56dacab3dc7138851951cf3479a5c17ddc5076 # v0.7.0
         with:
           pages_repo: ${{ github.workspace }}/pages-repo
           pages_branch: gh-pages
