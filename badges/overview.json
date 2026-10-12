@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "status": "published • d328687",
-  "build": "passed • d328687",
-  "commit": "d328687",
+  "status": "published • cafbc57",
+  "build": "passed • cafbc57",
+  "commit": "cafbc57",
   "storybookVersion": "v10.6.0",
   "storiesCount": 27,
   "componentsCount": 6,
@@ -11,5 +11,5 @@
   "docsCount": 6,
   "hasStoriesData": true,
   "tests": null,
-  "generatedAt": "2026-10-11T16:01:08.801Z"
+  "generatedAt": "2026-10-12T09:35:50.429Z"
 }
