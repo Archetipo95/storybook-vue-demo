@@ -37,6 +37,7 @@ Features:
 - **`Button`**: Customizable variants (`primary`, `secondary`, `outline`, `ghost`, `danger`), sizes, loading spinner, and interaction test stories.
 - **`Card`**: Structured container with `#header`, default body, and `#footer` slots.
 - **`Input`**: Accessible text input with `v-model` binding, error states, and helper text.
+- **`Switch`**: Accessible on/off toggle (`role="switch"`) with `v-model`, label, description, sizes, and keyboard support.
 
 ---
 

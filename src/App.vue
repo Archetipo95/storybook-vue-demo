@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Button, Badge, Input, Card, Alert, Avatar } from './components'
+import { Button, Badge, Input, Card, Alert, Avatar, Switch } from './components'
 import { useTheme } from './composables/useTheme'
 
 const { theme, toggleTheme } = useTheme()
 
+const notifications = ref(true)
+const previews = ref(false)
 const searchQuery = ref('')
 const count = ref(0)
 const isSubmitting = ref(false)
@@ -150,18 +152,35 @@ const handleSimulateDeploy = () => {
           </div>
         </Card>
 
+        <Card variant="elevated">
+          <template #header>
+            <div class="card-header-flex">
+              <span>Switches</span>
+              <Badge variant="primary">New</Badge>
+            </div>
+          </template>
+          <div class="form-stack">
+            <Switch v-model="notifications" label="Email notifications" />
+            <Switch
+              v-model="previews"
+              label="Publish PR previews"
+              description="Deploy a Storybook preview for every pull request."
+            />
+          </div>
+        </Card>
+
         <Card variant="outlined">
           <template #header>
             <span>Storybook & CI/CD</span>
           </template>
           <p class="section-desc">
-            Automated deployment to GitHub Pages on every push and PR preview support using
-            <strong>storybook-github-pages</strong>.
+            Automated deployment to GitHub Pages on every push, PR previews, and visual regression
+            checks using <strong>storybook-github-swiss-knife</strong>.
           </p>
           <template #footer>
             <div class="card-footer-actions">
               <a
-                href="https://github.com/Archetipo95/storybook-github-pages"
+                href="https://github.com/Archetipo95/storybook-github-swiss-knife"
                 target="_blank"
                 rel="noreferrer"
                 class="footer-link"
