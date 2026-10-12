@@ -20,7 +20,7 @@
     "@types/node": "^26.5.1",
     "@vitejs/plugin-vue": "^6.0.8",
     "storybook": "^10.6.0",
-    "storybook-swiss-knife": "https://github.com/Archetipo95/storybook-github-swiss-knife/releases/download/v0.6.1/storybook-swiss-knife-0.6.1.tgz",
+    "storybook-swiss-knife": "https://github.com/Archetipo95/storybook-github-swiss-knife/releases/download/v0.7.0/storybook-swiss-knife-0.7.0.tgz",
     "typescript": "^5.9.3",
     "vite": "^8.3.0"
   }
